@@ -25,8 +25,8 @@ const menuProps = {
 const Language = () => (
   <Space wrap>
     <Dropdown menu={menuProps}>
-      <Button style={{ background: '#201E43', border: 0, height: '30px' }}>
-        <Space style={{ background: '#201E43', color: '#ECEBF6', fontSize: '10px' }}>
+      <Button style={{ background: '#201E43', border: 0, height: '0.15rem' }}>
+        <Space style={{ background: '#201E43', color: '#ECEBF6', fontSize: '0.07rem' }}>
           Language
           <DownOutlined />
         </Space>

@@ -1,10 +1,12 @@
 import './App.css'
-import Space from './component/Layout.js'
-
+import React from 'react'
+import LeftTabs from './component/LeftTabs'
+import LayoutTop from './component/Layout'
 function App() {
   return (
     <div className="App">
-      <Space></Space>
+      <LayoutTop></LayoutTop>
+      <LeftTabs></LeftTabs>
     </div>
   )
 }
