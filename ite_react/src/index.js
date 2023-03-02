@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import './utils/rem.js'
+import './i18n/config.ts'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

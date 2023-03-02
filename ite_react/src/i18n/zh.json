@@ -1,0 +1,17 @@
+{
+    "header": {
+        "register":"注册",
+        "signin":"登陆",
+        "home": "首页"
+    },
+    "footer": {
+        "detail" : "版权所有 @ React"
+    },
+    "home": {
+        "hot_recommended": "爆款推荐",
+        "new_arrival": "新品上市",
+        "joint_venture": "合作企业",
+        "Connect a wallet":"连接钱包",
+        "Language":"语言"
+    }
+}

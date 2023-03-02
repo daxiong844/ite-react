@@ -126,9 +126,20 @@ code {
   border-radius: 0.03rem;
 }
 
+.earningTop{
+  width: 1.54rem;
+  margin-top: -0.12rem;
+  margin-left: -0.1rem;
+}
 
-
-
+.earningMiddle{
+  margin-top: 0.02rem;
+  margin-left: -0.015rem;
+  width: 1.25rem;
+  height: 0.9rem;
+  border-radius: 0.06rem;
+  background: linear-gradient(to bottom right, #8489FF, #451CFF);
+}
 
 
 

@@ -10,7 +10,8 @@ const ItemCard = () => (
       height: '1.645rem',
       backgroundColor: '#201E43',
       borderColor: '#201E43',
-      position: 'relative'
+      position: 'relative',
+      borderRadius: '0.08rem'
     }}
     cover={<img alt="example" src="https://photo69.mac89.com/2019/05/27/JPG-190527_12/7fvyidEiH8_small.jpg" style={{ width: '1.165rem', height: '0.595rem', borderBottomLeftRadius: '0.05rem', borderBottomRightRadius: '0.05rem', marginLeft: '0.0475rem', marginTop: '0.03rem' }} />}
   >

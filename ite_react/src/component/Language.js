@@ -1,33 +1,42 @@
 import { DownOutlined } from '@ant-design/icons'
-import { Button, Dropdown, message, Space } from 'antd'
+import { Button, Dropdown, Space } from 'antd'
 import React from 'react'
+import i18n from 'i18next'
+import { Trans } from 'react-i18next'
+
+const changeLanguage = val => {
+  i18n.changeLanguage(val) // val入参值为'en'或'zh'
+}
 
 const handleMenuClick = e => {
-  message.info('Click on menu item.')
-  console.log('click', e)
+  console.log(e.key)
+  if (e.key === 1) {
+    changeLanguage('zh')
+  } else {
+    changeLanguage('en')
+  }
 }
 const items = [
   {
     label: 'zh-CN',
     key: '1'
-    // icon: <UserOutlined />
   },
   {
     label: 'en-US',
     key: '2'
-    // icon: <UserOutlined />
   }
 ]
 const menuProps = {
   items,
   onClick: handleMenuClick
 }
-const Language = () => (
-  <Space wrap>
+
+const Language = WithTranslation => (
+  <Space wrap style={{ position: 'absolute', top: '0.3rem', right: '2.12rem' }}>
     <Dropdown menu={menuProps}>
       <Button style={{ background: '#201E43', border: 0, height: '0.15rem' }}>
         <Space style={{ background: '#201E43', color: '#ECEBF6', fontSize: '0.07rem' }}>
-          Language
+          <Trans>home.Language</Trans>
           <DownOutlined />
         </Space>
       </Button>

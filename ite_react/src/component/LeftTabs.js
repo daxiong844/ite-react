@@ -23,8 +23,7 @@
 import { Tabs } from 'antd'
 import { AppstoreOutlined, SettingOutlined, StarOutlined, WalletOutlined, UnorderedListOutlined, FileOutlined, FileDoneOutlined } from '@ant-design/icons'
 import React from 'react'
-import ItemCard from './Item'
-import DealList from './Deal'
+import Dashboard from '../menu/Dashboard'
 
 const { TabPane } = Tabs
 
@@ -53,15 +52,9 @@ export default class LeftTabs extends React.Component {
               </span>
             }
             key="1"
-            style={{ backgroundColor: 'red' }}
+            style={{ position: 'relative' }}
           >
-            Content of Dashboard
-            <div style={{ backgroundColor: 'skyblue', display: 'flex', justifyContent: 'space-between', width: '4rem' }}>
-              <ItemCard></ItemCard>
-              <ItemCard></ItemCard>
-              <ItemCard></ItemCard>
-            </div>
-            <DealList></DealList>
+            <Dashboard></Dashboard>
           </TabPane>
           <TabPane
             tab={
