@@ -31,7 +31,7 @@ code {
   background-color: #0B0A24;
 }
 
-.ant-tabs-tab-btn{
+ .ant-tabs-tab-btn{
   color: #727190;
 }
 
@@ -75,12 +75,10 @@ code {
 
 .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
   background-color: rgba(143, 125, 248, 1);
+  /* opacity: 0; */
   box-shadow: -0.01rem 0rem 0.05rem 0.01rem rgba(106, 91, 255, 0.16);
 }
 
-/* .ant-tabs-nav-list>.ant-tabs-ink-bar.ant-tabs-ink-bar-animated{
-  background-color: #0B0A24;
-} */
 
 .ant-input.css-dev-only-do-not-override-10ed4xt{
   background-color: #201E43;
@@ -140,6 +138,19 @@ code {
   border-radius: 0.06rem;
   background: linear-gradient(to bottom right, #8489FF, #451CFF);
 }
+
+/* .tableRight{
+  display: inline-block;
+  width: 0.15rem;
+  height: 0.15rem;
+  padding-right: '-10px';
+  position: absolute;
+  right: 0rem;
+  border-right: solid;
+  border-right-color: rgba(143, 125, 248, 1); 
+  overflow: hidden;
+} */
+
 
 
 

@@ -1,6 +1,8 @@
 import { Avatar, Button } from 'antd'
+import { useTranslation } from 'react-i18next'
 
 function DealList() {
+  const { t } = useTranslation()
   return (
     <table style={{ position: 'relative', marginTop: '0.07rem', width: '4rem', borderRadius: '0.1rem', background: '#201E43', textAlign: 'center', fontSize: '0.07rem', padding: '0.08rem' }}>
       <thead>
@@ -11,28 +13,28 @@ function DealList() {
               color: 'rgba(236,235,246,0.62)'
             }}
           >
-            Who
+            {t('Dashboard.Who')}
           </th>
           <th
             style={{
               color: 'rgba(236,235,246,0.62)'
             }}
           >
-            Need
+            {t('Dashboard.Need')}
           </th>
           <th
             style={{
               color: 'rgba(236,235,246,0.62)'
             }}
           >
-            Provide
+            {t('Dashboard.Provide')}
           </th>
           <th
             style={{
               color: 'rgba(236,235,246,0.62)'
             }}
           >
-            Deposited
+            {t('Dashboard.Deposited')}
           </th>
           <th></th>
         </tr>
@@ -56,7 +58,7 @@ function DealList() {
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
             <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
-              Done
+              {t('Dashboard.Done')}
             </Button>
           </td>
         </tr>
@@ -79,7 +81,7 @@ function DealList() {
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
             <Button size="small" style={{ backgroundColor: '#5639FF', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
-              Doing
+              {t('Dashboard.Doing')}
             </Button>
           </td>
         </tr>
@@ -103,7 +105,7 @@ function DealList() {
           <td>
             {' '}
             <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
-              Done
+              {t('Dashboard.Done')}
             </Button>
           </td>
         </tr>
@@ -126,7 +128,7 @@ function DealList() {
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
             <Button size="small" style={{ backgroundColor: '#5639FF', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
-              Doing
+              {t('Dashboard.Doing')}
             </Button>
           </td>
         </tr>

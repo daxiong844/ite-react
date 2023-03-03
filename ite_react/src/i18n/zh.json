@@ -1,17 +1,39 @@
 {
-    "header": {
-        "register":"注册",
-        "signin":"登陆",
-        "home": "首页"
+    "menuLeft": {
+        "Dashboard":"控制面板",
+        "List":"目录",
+        "Deal": "交易单",
+        "PROFILE": "简介",
+        "My Portfolio": "我的投资",
+        "My Items": "我的需求单",
+        "My Deal": "我的交易单",
+        "Airdrop": "空投"
     },
-    "footer": {
-        "detail" : "版权所有 @ React"
+    "Dashboard":{
+        "Trending Item":"正在进行的需求单",
+        "Music":"音乐",
+        "Collectibles":"收藏品",
+        "See more":"查看更多",
+        "Top Deal":"顶级交易单",
+        "Who":"交易双方",
+        "Need":"需求",
+        "Provide":"提供",
+        "Deposited":"质押",
+        "Done":"已完成",
+        "Doing":"进行中",
+        "Earning":"收入",
+        "See all":"查看全部",
+        "Your Earning":"您的收入",
+        "Withdraw":"提现",
+        "NEW ITEM":"新增需求单",
+        "Top Creators":"顶级创建者",
+        "Follow":"跟随"
     },
-    "home": {
-        "hot_recommended": "爆款推荐",
-        "new_arrival": "新品上市",
-        "joint_venture": "合作企业",
-        "Connect a wallet":"连接钱包",
-        "Language":"语言"
+    "layoutTop": {
+        "Language":"语言",
+        "en-US":"英文",
+        "zh-CN":"中文",
+        "Search...":"搜索...",
+        "Connect a wallet":"连接钱包"
     }
 }

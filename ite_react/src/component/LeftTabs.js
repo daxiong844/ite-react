@@ -24,10 +24,12 @@ import { Tabs } from 'antd'
 import { AppstoreOutlined, SettingOutlined, StarOutlined, WalletOutlined, UnorderedListOutlined, FileOutlined, FileDoneOutlined } from '@ant-design/icons'
 import React from 'react'
 import Dashboard from '../menu/Dashboard'
+// 引入HOC高阶函数withTranslation 和 i18n的ts类型定义WithTranslation
+import { withTranslation } from 'react-i18next'
 
 const { TabPane } = Tabs
 
-export default class LeftTabs extends React.Component {
+class LeftTabs extends React.Component {
   state = {
     tabPosition: 'left'
   }
@@ -36,19 +38,24 @@ export default class LeftTabs extends React.Component {
     this.setState({ tabPosition })
   }
 
-  // activeKey = e => {
-  //   console.log(e)
-  // }
+  activeKey = e => {
+    console.log(e)
+  }
 
   render() {
+    const { t } = this.props
+
     return (
-      <div>
-        <Tabs tabPosition={this.state.tabPosition} type="line">
+      <div style={{ position: 'relative' }}>
+        <Tabs tabPosition={this.state.tabPosition} type="line" tabBarStyle={{ position: 'relative' }}>
           <TabPane
             tab={
-              <span>
+              <span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <AppstoreOutlined />
-                Dashboard
+                {t('menuLeft.Dashboard')}
+                {/* <table className="tableRight">
+                  <span style={{ marginRight: '-1rem' }}>|</span>
+                </table> */}
               </span>
             }
             key="1"
@@ -60,7 +67,7 @@ export default class LeftTabs extends React.Component {
             tab={
               <span>
                 <UnorderedListOutlined />
-                List
+                {t('menuLeft.List')}
               </span>
             }
             key="2"
@@ -71,19 +78,19 @@ export default class LeftTabs extends React.Component {
             tab={
               <span>
                 <FileDoneOutlined />
-                Deal
+                {t('menuLeft.Deal')}
               </span>
             }
             key="3"
           >
             Content of Deal
           </TabPane>
-          <TabPane tab="PROFILE"></TabPane>
+          <Tabs tab={t('menuLeft.PROFILE')}></Tabs>
           <TabPane
             tab={
               <span>
                 <StarOutlined />
-                My Portfolio
+                {t('menuLeft.My Portfolio')}
               </span>
             }
             key="4"
@@ -94,7 +101,7 @@ export default class LeftTabs extends React.Component {
             tab={
               <span>
                 <FileOutlined />
-                My Items
+                {t('menuLeft.My Items')}
               </span>
             }
             key="5"
@@ -105,7 +112,7 @@ export default class LeftTabs extends React.Component {
             tab={
               <span>
                 <WalletOutlined />
-                My Deal
+                {t('menuLeft.My Deal')}
               </span>
             }
             key="6"
@@ -116,7 +123,7 @@ export default class LeftTabs extends React.Component {
             tab={
               <span>
                 <SettingOutlined />
-                Airdrop
+                {t('menuLeft.Airdrop')}
               </span>
             }
             key="7"
@@ -128,3 +135,5 @@ export default class LeftTabs extends React.Component {
     )
   }
 }
+
+export default LeftTabs = withTranslation()(LeftTabs)
