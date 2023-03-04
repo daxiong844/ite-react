@@ -3,8 +3,9 @@ import { Col, Row, Input } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import Language from './Language'
 import { useTranslation } from 'react-i18next'
-import { Button } from 'antd'
-import { CreditCardOutlined } from '@ant-design/icons'
+// import { Button } from 'antd'
+// import { CreditCardOutlined } from '@ant-design/icons'
+import Connect from './Connect'
 
 function LayoutTop() {
   const { t } = useTranslation()
@@ -21,10 +22,11 @@ function LayoutTop() {
           style={{ width: '2.915rem', background: '#201E43', outline: 'none', border: 0, color: '#727191', height: '0.24rem', position: 'absolute', top: '0.245rem', left: '0.19rem' }}
         />
         <Language></Language>
-        <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
+        {/* <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
           <CreditCardOutlined style={{ marginRight: '-0.02rem' }} />
           {t('layoutTop.Connect a wallet')}
-        </Button>
+        </Button> */}
+        <Connect></Connect>
       </Col>
     </Row>
   )

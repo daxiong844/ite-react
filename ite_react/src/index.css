@@ -151,6 +151,14 @@ code {
   overflow: hidden;
 } */
 
+.messageP{
+  background-image: url(../public/photos/Group\ 184@2x.png);
+}
+
+.ant-btn .anticon .anticon-credit-card svg{
+  background-color: red;
+}
+
 
 
 
