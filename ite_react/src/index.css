@@ -159,6 +159,61 @@ code {
   background-color: red;
 }
 
+.App{
+  min-width: 7.5rem;
+  min-height: 1rem;
+}
+
+.ant-modal-content{
+  background-color: rgba(22, 22, 29, 1) !important;
+  border-radius: 0.1rem !important;
+}
+
+.ant-modal-close{
+  color: rgba(236, 235, 246, 0.80) !important;
+}
+
+.ant-upload{
+  border-radius: 0.06rem;
+  background-color: rgba(20, 20, 20, 1);
+}
+
+.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label{
+  color: rgba(236, 235, 246, 0.80);
+  font-size: 0.09rem;
+}
+
+.ant-upload.ant-upload-select{
+  width: 0.3rem !important;
+  height: 0.3rem !important;
+  margin-top: -0.05rem;
+  border-color: rgba(196, 196, 196, 0.40) !important;
+  border-radius: 0.02rem !important;
+}
+
+.ant-input.css-dev-only-do-not-override-10ed4xt{
+  color: rgba(236, 235, 246, 0.80) !important;
+}
+
+.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label{
+  font-size: 0.08rem;
+}
+
+.ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector{
+  background-color: RGBA(20, 20, 20, 1) !important;
+  border-color: rgba(196, 196, 196, 0.40) !important;
+  color: rgba(196, 196, 196, 0.40) !important;
+}
+
+.ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-arrow{
+  color: rgba(196, 196, 196, 0.40) !important;
+}
+
+.ant-modal-body .ant-form.ant-form-vertical.css-dev-only-do-not-override-10ed4xt .newItemRight{
+  border: 10px !important;
+}
+
+
 
 
 

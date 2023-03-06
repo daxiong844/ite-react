@@ -2,12 +2,11 @@ import { EthereumClient, modalConnectors, walletConnectProvider } from '@web3mod
 import { Web3Modal } from '@web3modal/html'
 import { configureChains, createClient } from '@wagmi/core'
 import { arbitrum, mainnet, polygon } from '@wagmi/core/chains'
-import { Button } from 'antd'
+// import { Button } from 'antd'
 import { CreditCardOutlined } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
-// import { Avatar } from 'antd'
-// import { DownOutlined } from '@ant-design/icons'
-// import Web3 from 'web3'
+import { Avatar } from 'antd'
+import { DownOutlined } from '@ant-design/icons'
 
 const chains = [arbitrum, mainnet, polygon]
 
@@ -23,27 +22,27 @@ const wagmiClient = createClient({
   }),
   provider
 })
+
 // Web3Modal and Ethereum Client
 const ethereumClient = new EthereumClient(wagmiClient, chains)
 new Web3Modal({ projectId: '0a0053b31b98ce424792891e45247291' }, ethereumClient)
 
 function Connect() {
   const { t } = useTranslation()
-  // const web3 = new Web3(new Web3.providers.HttpProvider('HTTP://127.0.0.1:8545'))
-  // var accounts = web3.eth.currentProvider()
-  // console.log(accounts)
-  // const res1 = web3.eth.accounts
-  // console.log(res1)
-  // const res = true
+
+  const res = true
+
   return (
     <div style={{ position: 'relative' }}>
-      {/* {res ? (
-        <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
+      {res ? (
+        // <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
+        <div>
           <CreditCardOutlined style={{ marginRight: '-0.02rem' }} />
-          {t('layoutTop.Connect a wallet')}
-          <w3m-core-button style={{ opacity: 0, position: 'absolute', top: '0rem', right: '0rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></w3m-core-button>
-        </Button>
+
+          <w3m-core-button label={t('layoutTop.Connect a wallet')} style={{ position: 'absolute', top: '0.27rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></w3m-core-button>
+        </div>
       ) : (
+        // </Button>
         <div>
           <Avatar style={{ position: 'absolute', top: '0.25rem', right: '1.5rem', width: '0.24rem', height: '0.24rem' }} src="https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca" />
           <p style={{ position: 'absolute', top: '0.2rem', right: '0.94rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>Adelaide Perry</p>
@@ -52,13 +51,13 @@ function Connect() {
           <p style={{ position: 'absolute', top: '0.3rem', right: '1.17rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>Creator</p>
           <p className="messageP" style={{ position: 'absolute', top: '0.18rem', right: '0.35rem', width: '0.24rem', height: '0.24rem', borderRadius: '50%' }}></p>
         </div>
-      )} */}
-      <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
+      )}
+      {/* <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
         <CreditCardOutlined style={{ marginRight: '-0.02rem' }} />
         {t('layoutTop.Connect a wallet')}
         <w3m-core-button label={t('layoutTop.Connect a wallet')} style={{ position: 'absolute', top: '0rem', right: '0rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></w3m-core-button>
       </Button>
-      {/* <div>
+      <div>
         <Avatar style={{ position: 'absolute', top: '0.25rem', right: '1.5rem', width: '0.24rem', height: '0.24rem' }} src="https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca" />
         <p style={{ position: 'absolute', top: '0.2rem', right: '0.94rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>Adelaide Perry</p>
         <DownOutlined style={{ position: 'absolute', top: '0.285rem', right: '0.75rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }} />

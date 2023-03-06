@@ -1,5 +1,6 @@
 import { Card, Button } from 'antd'
 import { useTranslation } from 'react-i18next'
+import NewItemButton from './NewItemButton'
 
 function EarningCard() {
   const { t } = useTranslation()
@@ -26,7 +27,8 @@ function EarningCard() {
         </div>
         <Button style={{ position: 'absolute', top: '0.55rem', width: '1.15rem', height: '0.2rem', backgroundColor: '#fff', color: 'RGBA(137, 137, 140, 1)', fontSize: '0.07rem', border: 'none' }}>{t('Dashboard.Withdraw')}</Button>
       </div>
-      <Button style={{ marginTop: '0.18rem', width: '1.34rem', height: '0.25rem', border: 'none', borderRadius: '0.04rem', color: 'RGBA(24, 112, 248, 1)', fontSize: '0.08rem' }}>{t('Dashboard.NEW ITEM')}</Button>
+      <NewItemButton></NewItemButton>
+      {/* <Button style={{ marginTop: '0.18rem', width: '1.34rem', height: '0.25rem', border: 'none', borderRadius: '0.04rem', color: 'RGBA(24, 112, 248, 1)', fontSize: '0.08rem' }}>{t('Dashboard.NEW ITEM')}</Button> */}
     </Card>
   )
 }

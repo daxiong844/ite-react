@@ -35,5 +35,19 @@
         "zh-CN":"中文",
         "Search...":"搜索...",
         "Connect a wallet":"连接钱包"
+    },
+    "newItemCard":{
+        "Input":"输入",
+        "Provide":"提供",
+        "CREATE":"创建",
+        "Value":"价值",
+        "Language":"语言",
+        "en-US":"英文",
+        "zh-CN":"中文",
+        "Location":"位置",
+        "input something that you need. eg:i want to get a baseketball....":"输入你需要的东西.我想要一个棒球....",
+        "input something that you will provide. eg:i will get you a baseketball....":"输入您将提供的内容.我给你拿一个棒球....",
+        "input the value of that you will provide":"输入您将提供的物品的价值",
+        "input the location where you will provide in":"输入要提供的位置"
     }
 }
