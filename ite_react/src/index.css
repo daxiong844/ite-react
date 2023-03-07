@@ -196,7 +196,7 @@ code {
 }
 
 .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label{
-  font-size: 0.08rem;
+  font-size: 0.0755rem;
 }
 
 .ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector{
@@ -205,13 +205,117 @@ code {
   color: rgba(196, 196, 196, 0.40) !important;
 }
 
+
+
 .ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-arrow{
   color: rgba(196, 196, 196, 0.40) !important;
 }
 
 .ant-modal-body .ant-form.ant-form-vertical.css-dev-only-do-not-override-10ed4xt .newItemRight{
-  border: 10px !important;
+  border-left: 0.01rem solid rgba(255, 255, 255, 0.10) !important;
 }
+
+
+
+.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required::before {
+  position: absolute;
+  left: 0.22rem;
+}
+
+.ant-form-item.newItemProvide.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required::before {
+  position: absolute;
+  left: 0.3rem;
+}
+
+
+
+.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required::before {
+  position: absolute;
+  left: 0.34rem;
+}
+
+.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required{
+  font-size: 0.07rem;
+}
+
+.ant-select-selector{
+  background-color: red !important;
+  margin-top: 0.1rem;
+  margin-left: -0.02rem;
+  width: 2.2rem;
+  height: 0.5rem;
+  border-color: rgba(196, 196, 196, 0.40) !important;
+  background-color: rgba(22, 22, 29, 1) !important;
+}
+
+.ant-select-selection-overflow{
+  margin-top: -0.3rem;
+}
+
+.ant-select-selection-overflow-item{
+  color: rgba(22, 22, 29, 1);
+  background-color: RGBA(239, 241, 244, 1);
+  border-radius: 0.02rem;
+}
+
+.ant-select-selection-item{
+  background-color: RGBA(239, 241, 244, 1) !important;
+  border: 0rem !important;
+}
+
+.ant-select-selection-item-remove{
+  display: block;
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: RGBA(191, 195, 204, 1);
+  color: #fff !important;
+  line-height: 0.1rem !important;
+  margin-top: 0.015rem;
+  border-radius: 50%;
+}
+
+.ant-select-selection-overflow-item.ant-select-selection-overflow-item-suffix{
+  opacity: 0 !important;
+}
+
+.ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-multiple.ant-select-open.ant-select-show-search{
+    width: 2.2rem !important;
+}
+
+.ant-select.ant-select-in-form-item.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-search .ant-select-selection-search-input{
+  background-color: rgba(22, 22, 29, 1) !important;
+}
+
+.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-row.ant-form-item-row.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-item{
+  background-color: RGBA(20, 20, 20, 1)!important;
+}
+
+.ant-select-selection-overflow-item{
+  margin-right: 0.1rem;
+}
+
+.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton .anticon.anticon-down{
+  position: absolute;
+  top: 0.08rem;
+  left: 0.85rem;
+  color: RGBA(134, 143, 152, 1);
+  font-size: 0.06rem !important;
+}
+
+.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton span{
+  color: RGBA(134, 143, 152, 1);
+  position: absolute;
+  top: 0.04rem;
+  left: 0.05rem;
+}
+
+.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton{
+  border-color: rgba(196, 196, 196, 0.40);
+}
+
+
+
+
 
 
 

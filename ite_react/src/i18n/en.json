@@ -45,9 +45,6 @@
         "en-US":"en-US",
         "zh-CN":"zh-CN",
         "Location":"Location",
-        "input something that you need. eg:i want to get a baseketball....":"input something that you need. eg:i want to get a baseketball....",
-        "input something that you will provide. eg:i will get you a baseketball....":"input something that you will provide. eg:i will get you a baseketball....",
-        "input the value of that you will provide":"input the value of that you will provide",
-        "input the location where you will provide in":"input the location where you will provide in"
+        "select":"select"
     }
 }
