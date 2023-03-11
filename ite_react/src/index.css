@@ -313,6 +313,26 @@ code {
   border-color: rgba(196, 196, 196, 0.40);
 }
 
+/* .ant-select-selection-search{
+  background-color: RGBA(20, 20, 20, 1) !important;
+}
+
+.ant-select.ant-select-in-form-item.ant-select-status-success.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-search-input{
+  background-color: RGBA(20, 20, 20, 1) !important;
+} */
+
+.ant-select.ant-select-in-form-item.newItemSelect.ant-select-status-success.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-item{
+  background-color: RGBA(20, 20, 20, 1) !important;
+}
+
+.ant-select-selection-placeholder{
+  color: rgba(236, 235, 246, 0.60) !important;
+}
+
+.ant-form-item-control-input-content .ant-select.ant-select-in-form-item.ant-select-status-success.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-item{
+  color: rgba(236, 235, 246, 0.60) !important;
+}
+
 
 
 

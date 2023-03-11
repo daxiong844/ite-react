@@ -1,35 +1,140 @@
-import { PlusOutlined, DownOutlined } from '@ant-design/icons'
-import { Form, Input, Upload, Button, Menu, Dropdown } from 'antd'
-import i18n from 'i18next'
+import { PlusOutlined } from '@ant-design/icons'
+import { Form, Input, Upload, Button, Select } from 'antd'
 import { useTranslation } from 'react-i18next'
 import NewItemText from './NewItemText'
+
+import Web3 from 'web3'
+// 合约地址
+const contractAddress = '0x5fbdb2315678afecb367f032d93f642f64180aa3'
+// 合约ABI
+const marginDepositABI = [
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: false,
+        internalType: 'address',
+        name: 'user',
+        type: 'address'
+      },
+      {
+        indexed: false,
+        internalType: 'uint256',
+        name: 'requestId',
+        type: 'uint256'
+      },
+      {
+        indexed: false,
+        internalType: 'uint256',
+        name: 'amount',
+        type: 'uint256'
+      }
+    ],
+    name: 'Deposit',
+    type: 'event'
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: 'requestId',
+        type: 'uint256'
+      }
+    ],
+    name: 'depositDeposit',
+    outputs: [],
+    stateMutability: 'payable',
+    type: 'function'
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256'
+      }
+    ],
+    name: 'deposits',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256'
+      }
+    ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: 'requestId',
+        type: 'uint256'
+      }
+    ],
+    name: 'getDeposit',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256'
+      }
+    ],
+    stateMutability: 'view',
+    type: 'function'
+  }
+]
+// 使用web3连接网络
+const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545')
+// 实例化智能合约对象
+const marginDepositContract = new web3.eth.Contract(marginDepositABI, contractAddress)
+
+const { Option } = Select
 
 const NewItem = () => {
   const { t } = useTranslation()
 
-  const changeLanguage = val => {
-    i18n.changeLanguage(val) // val入参值为'en'或'zh'
-  }
-
-  function handleMenuClick(e) {
-    console.log('click', e)
-    if (e.key === '1') {
-      changeLanguage('en')
-    } else if (e.key === '2') {
-      changeLanguage('zh')
+  const finish = async values => {
+    const amount = await values
+    const accounts = await web3.eth.getAccounts()
+    // console.log(accounts[0])
+    // console.log(amount['价值'])
+    // console.log(amount['Value'])
+    if (amount['价值']) {
+      // 存入保证金
+      marginDepositContract.methods
+        .depositDeposit(1)
+        .send({ value: amount['价值'], from: accounts[0] })
+        .on('receipt', receipt => {
+          console.log('depositDeposit successful')
+        })
+        .on('error', error => {
+          console.error(error)
+        })
+    } else {
+      // 存入保证金
+      marginDepositContract.methods
+        .depositDeposit(1)
+        .send({ value: amount['Value'], from: accounts[0] })
+        .on('receipt', receipt => {
+          console.log('depositDeposit successful')
+        })
+        .on('error', error => {
+          console.error(error)
+        })
     }
+    // 查询保证金
+    marginDepositContract.methods
+      .getDeposit(1)
+      .call()
+      .then(deposit => {
+        console.log(`Query deposit according to requestId ${1}: ${deposit}`)
+      })
+      .catch(error => {
+        console.error(error)
+      })
   }
-
-  const menu = (
-    <Menu onClick={handleMenuClick}>
-      <Menu.Item key="1" onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en')}>
-        {t('layoutTop.en-US')}
-      </Menu.Item>
-      <Menu.Item key="2" onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'zh' : 'en')}>
-        {t('layoutTop.zh-CN')}
-      </Menu.Item>
-    </Menu>
-  )
 
   return (
     <>
@@ -46,6 +151,7 @@ const NewItem = () => {
           maxWidth: 600,
           marginLeft: '0.1rem'
         }}
+        onFinish={finish}
       >
         <div className="newItemLeft" style={{ width: '2.92rem', height: '3.2rem' }}>
           <Form.Item
@@ -53,8 +159,7 @@ const NewItem = () => {
             name={t('newItemCard.Input')}
             rules={[
               {
-                required: true,
-                message: ''
+                required: true
               }
             ]}
           >
@@ -81,8 +186,7 @@ const NewItem = () => {
             name={t('newItemCard.Provide')}
             rules={[
               {
-                required: true,
-                message: ''
+                required: true
               }
             ]}
             style={{ marginTop: '-0.1rem' }}
@@ -124,13 +228,13 @@ const NewItem = () => {
               ]}
               style={{ marginTop: '-0.13rem' }}
             >
-              <Input style={{ width: '1.95rem', height: '0.25rem', borderColor: 'rgba(196, 196, 196, 0.40)', backgroundColor: 'rgba(22, 22, 29, 1)' }} placeholder="input the value of that you will provide" />
-              <span style={{ display: 'block', width: '0.22rem', color: 'rgba(236, 235, 246, 0.60)', fontSize: '0.08rem', position: 'absolute', top: '0.06rem', left: '2rem' }}>USDT</span>
+              <Input type="textArea" style={{ width: '1.95rem', height: '0.25rem', borderColor: 'rgba(196, 196, 196, 0.40)', backgroundColor: 'rgba(22, 22, 29, 1)' }} placeholder="input the value of that you will provide" />
             </Form.Item>
+            <span style={{ display: 'block', width: '0.22rem', color: 'rgba(236, 235, 246, 0.60)', fontSize: '0.08rem', position: 'absolute', top: '0.23rem', left: '2.12rem' }}>USDT</span>
           </div>
           <Form.Item
             label={t('newItemCard.Language')}
-            name={t('newItemCard.Value')}
+            name={t('newItemCard.Language')}
             rules={[
               {
                 required: true
@@ -138,22 +242,22 @@ const NewItem = () => {
             ]}
             className="newItemLanguage"
           >
-            <Dropdown overlay={menu}>
+            <Select placeholder={t('newItemCard.select')} className="newItemSelect">
+              <Option value="en" className="newItemSelectOption">
+                {t('newItemCard.en-US')}
+              </Option>
+              <Option value="zh" className="newItemSelectOption">
+                {t('newItemCard.zh-CN')}
+              </Option>
+            </Select>
+            {/* <Dropdown overlay={menu}>
               <Button className="newItemButton" style={{ background: 'RGBA(20, 20, 20, 1)', width: '1rem', height: '0.2rem', color: '#ECEBF6', fontSize: '0.07rem' }}>
                 {t('newItemCard.select')}
                 <DownOutlined style={{ fontSize: '0.05rem' }} />
               </Button>
-            </Dropdown>
+            </Dropdown> */}
           </Form.Item>
-          <Form.Item
-            label={t('newItemCard.Location')}
-            rules={[
-              {
-                required: true
-              }
-            ]}
-            style={{ marginTop: '-0.1rem' }}
-          >
+          <Form.Item label={t('newItemCard.Location')} style={{ marginTop: '-0.1rem' }}>
             <Input style={{ width: '2.24rem', height: '0.25rem', borderColor: 'rgba(196, 196, 196, 0.40)', backgroundColor: 'rgba(22, 22, 29, 1)' }} placeholder="input the location where you will provide in" />
           </Form.Item>
           <Form.Item style={{ marginTop: '-0.1rem' }}>
