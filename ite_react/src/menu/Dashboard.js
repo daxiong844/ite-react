@@ -36,6 +36,7 @@ class Dashboard extends React.Component {
             <ItemCard></ItemCard>
             <ItemCard></ItemCard>
           </div>
+
           <div style={{ marginTop: '0.21rem', width: '4rem', display: 'flex', justifyContent: 'space-between', marginBottom: '0.06rem' }}>
             <span style={{ color: 'rgba(245, 244, 251, 1)', fontSize: '0.12rem' }}>{t('Dashboard.Top Deal')}</span>
             <div style={{ width: '1.7rem', textAlign: 'right', marginRight: '-0.06rem', paddingTop: '0.02rem' }}>

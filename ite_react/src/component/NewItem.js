@@ -5,7 +5,7 @@ import NewItemText from './NewItemText'
 
 import Web3 from 'web3'
 // 合约地址
-const contractAddress = '0x5fbdb2315678afecb367f032d93f642f64180aa3'
+const contractAddress = '0x0B306BF915C4d645ff596e518fAf3F9669b97016'
 // 合约ABI
 const marginDepositABI = [
   {
@@ -98,9 +98,10 @@ const NewItem = () => {
   const finish = async values => {
     const amount = await values
     const accounts = await web3.eth.getAccounts()
-    // console.log(accounts[0])
-    // console.log(amount['价值'])
-    // console.log(amount['Value'])
+    console.log(accounts[0])
+    console.log(amount['价值'])
+    console.log(amount['Value'])
+
     if (amount['价值']) {
       // 存入保证金
       marginDepositContract.methods
@@ -118,7 +119,7 @@ const NewItem = () => {
         .depositDeposit(1)
         .send({ value: amount['Value'], from: accounts[0] })
         .on('receipt', receipt => {
-          console.log('depositDeposit successful')
+          console.log('存入保证金成功!')
         })
         .on('error', error => {
           console.error(error)
@@ -129,7 +130,7 @@ const NewItem = () => {
       .getDeposit(1)
       .call()
       .then(deposit => {
-        console.log(`Query deposit according to requestId ${1}: ${deposit}`)
+        console.log(`您的保证金余额是:${deposit}`)
       })
       .catch(error => {
         console.error(error)
