@@ -7,6 +7,7 @@ import { CreditCardOutlined } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
 import { Avatar } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
+import { Web3Button } from '@web3modal/react'
 
 const chains = [arbitrum, mainnet, polygon]
 
@@ -39,7 +40,7 @@ function Connect() {
         <div>
           <CreditCardOutlined style={{ marginRight: '-0.02rem' }} />
 
-          <w3m-core-button label={t('layoutTop.Connect a wallet')} style={{ position: 'absolute', top: '0.27rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></w3m-core-button>
+          <Web3Button label={t('layoutTop.Connect a wallet')} style={{ position: 'absolute', top: '0.27rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></Web3Button>
         </div>
       ) : (
         // </Button>
