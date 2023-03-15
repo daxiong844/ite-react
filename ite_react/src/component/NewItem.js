@@ -103,10 +103,12 @@ const NewItem = () => {
     console.log(amount['Value'])
 
     if (amount['价值']) {
+      // 将输入的金额转为以太币
+      const marginAmount = web3.utils.toWei(amount['价值'], 'ether')
       // 存入保证金
       marginDepositContract.methods
         .depositDeposit(1)
-        .send({ value: amount['价值'], from: accounts[0] })
+        .send({ value: marginAmount, from: accounts[0] })
         .on('receipt', receipt => {
           console.log('depositDeposit successful')
         })
@@ -114,10 +116,12 @@ const NewItem = () => {
           console.error(error)
         })
     } else {
+      // 将输入的金额转为以太币
+      const marginAmount = web3.utils.toWei(amount['Value'], 'ether')
       // 存入保证金
       marginDepositContract.methods
         .depositDeposit(1)
-        .send({ value: amount['Value'], from: accounts[0] })
+        .send({ value: marginAmount, from: accounts[0] })
         .on('receipt', receipt => {
           console.log('存入保证金成功!')
         })
@@ -135,6 +139,14 @@ const NewItem = () => {
       .catch(error => {
         console.error(error)
       })
+
+    // 合约中的Deposit事件
+    marginDepositContract.events.Deposit({}, (error, event) => {
+      if (error) console.log(error)
+      else {
+        console.log(event.returnValues)
+      }
+    })
   }
 
   return (

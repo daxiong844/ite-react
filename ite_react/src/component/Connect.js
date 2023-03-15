@@ -3,11 +3,11 @@ import { Web3Modal } from '@web3modal/html'
 import { configureChains, createClient } from '@wagmi/core'
 import { arbitrum, mainnet, polygon } from '@wagmi/core/chains'
 // import { Button } from 'antd'
-import { CreditCardOutlined } from '@ant-design/icons'
+// import { CreditCardOutlined } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
 import { Avatar } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
-import { Web3Button } from '@web3modal/react'
+// import { Web3Button } from '@web3modal/react'
 
 const chains = [arbitrum, mainnet, polygon]
 
@@ -28,19 +28,40 @@ const wagmiClient = createClient({
 const ethereumClient = new EthereumClient(wagmiClient, chains)
 new Web3Modal({ projectId: '0a0053b31b98ce424792891e45247291' }, ethereumClient)
 
-function Connect() {
+// import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
+// import { Web3Modal } from '@web3modal/html'
+// import { configureChains, createClient } from '@wagmi/core'
+// import { arbitrum, mainnet, polygon } from '@wagmi/core/chains'
+// import { useTranslation } from 'react-i18next'
+// import { Avatar } from 'antd'
+// import { DownOutlined } from '@ant-design/icons'
+// import { CreditCardOutlined } from '@ant-design/icons'
+
+// const chains = [arbitrum, mainnet, polygon]
+// const projectId = '0a0053b31b98ce424792891e45247291'
+
+// const { provider } = configureChains(chains, [w3mProvider({ projectId })])
+// const wagmiClient = createClient({
+//   autoConnect: true,
+//   connectors: w3mConnectors({ projectId, version: 1, chains }),
+//   provider
+// })
+// const ethereumClient = new EthereumClient(wagmiClient, chains)
+// new Web3Modal({ projectId }, ethereumClient)
+
+const Connect = () => {
   const { t } = useTranslation()
 
   const res = true
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div className="connectBig">
       {res ? (
         // <Button type="link" style={{ position: 'absolute', top: '0.28rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}>
-        <div>
-          <CreditCardOutlined style={{ marginRight: '-0.02rem' }} />
+        <div className="w3mCoreButton">
+          {/* <CreditCardOutlined style={{ marginRight: '-0.02rem' }} /> */}
 
-          <Web3Button label={t('layoutTop.Connect a wallet')} style={{ position: 'absolute', top: '0.27rem', right: '0.7rem', color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></Web3Button>
+          <w3m-core-button className="Web3Button" icon="null" label={t('layoutTop.Connect a wallet')} style={{ color: 'rgba(255, 255, 255, 1)', fontSize: '0.07rem' }}></w3m-core-button>
         </div>
       ) : (
         // </Button>

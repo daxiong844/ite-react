@@ -333,10 +333,31 @@ code {
   color: rgba(236, 235, 246, 0.60) !important;
 }
 
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated{
+  height: 0.15rem !important;
+  margin-top: 0.045rem;
+}
 
+.ant-tabs-tab.ant-tabs-tab-disabled{
+  cursor: text !important;
+}
 
+.ant-tabs-tab.ant-tabs-tab-disabled .ant-tabs-tab-btn:hover{
+  color: #727190 !important ;
+}
 
+.connectBig{
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 0.3rem;
+  z-index: 100;
+}
 
+.connectBig .w3mCoreButton .Web3Button {
+  background-color: red !important;
+}
 
 
 

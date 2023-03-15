@@ -85,7 +85,7 @@ class LeftTabs extends React.Component {
           >
             Content of Deal
           </TabPane>
-          <Tabs tab={t('menuLeft.PROFILE')}></Tabs>
+          <Tabs disabled tab={t('menuLeft.PROFILE')}></Tabs>
           <TabPane
             tab={
               <span>
