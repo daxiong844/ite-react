@@ -359,6 +359,114 @@ code {
   background-color: red !important;
 }
 
+td.ant-table-cell{
+  background-color: rgba(32, 30, 67, 1) !important;
+  border-bottom: 0 !important;
+  color: rgba(236, 235, 246, 1) !important;
+}
+
+td.ant-table-cell:nth-child(3){
+  text-align: left !important;
+}
+
+td.ant-table-cell:nth-child(4) {
+  text-align: left !important;
+}
+
+td.ant-table-cell.ant-table-cell-row-hover{
+  background-color: rgba(32, 30, 67, 1) !important;
+}
+
+th.ant-table-cell{
+  background-color: rgba(32, 30, 67, 1) !important;
+  border: none !important;
+  color: rgba(236, 235, 246, 0.62) !important;
+}
+
+td.ant-table-cell::before {
+  background-color: rgba(32, 30, 67, 1) !important;
+}
+
+th.ant-table-cell::before{
+    background-color: rgba(32, 30, 67, 1) !important;
+}
+
+.ant-spin-container{
+  border: none !important;
+}
+
+.ant-table-content{
+    background-color: rgba(32, 30, 67, 1) !important;
+}
+
+li.ant-pagination-item.ant-pagination-item-active{
+  background-color: rgba(32, 30, 67, 1) !important;
+  border: none !important;
+}
+
+li.ant-pagination-item a{
+  color: rgba(236, 235, 246, 1) !important;
+}
+
+li.ant-pagination-item.ant-pagination-item-active a{
+  color: RGBA(54, 73, 172, 1) !important;
+}
+
+.anticon.anticon-left{
+  color: rgba(236, 235, 246, 1) !important;
+}
+
+.anticon.anticon-right{
+  color: rgba(236, 235, 246, 1) !important;
+}
+
+.ant-space-item .ant-tag.css-dev-only-do-not-override-10ed4xt{
+  border: 0.01rem solid RGBA(69, 105, 250, 1);
+  border-radius: 0.11rem;
+  color: RGBA(69, 105, 250, 1);
+}
+
+.ant-tag.css-dev-only-do-not-override-10ed4xt:hover{
+  background-color: RGBA(66, 99, 235, 1);
+  color: #fff !important;
+}
+
+.ant-tag.css-dev-only-do-not-override-10ed4xt:hover .anticon.anticon-close.ant-tag-close-icon{
+  background-color: #fff;
+  border-radius: 50%;
+  color: RGBA(66, 99, 235, 1);
+  width: 0.08rem;
+  height: 0.08rem;
+  line-height: 0.1rem;
+  text-align: center;
+  opacity: 1;
+  position: relative;
+}
+
+.anticon.anticon-close.ant-tag-close-icon{
+  opacity: 0;
+  position: fixed;
+}
+
+td.ant-table-cell.TrendingItemDeposited{
+  color: rgba(120, 222, 10, 1) !important;
+}
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

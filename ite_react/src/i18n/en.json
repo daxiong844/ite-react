@@ -46,5 +46,17 @@
         "zh-CN":"zh-CN",
         "Location":"Location",
         "select":"select"
+    },
+    "Deal":{
+        "Deal History":"Deal History",
+        "Time":"Time",
+        "Earning":"Earning",
+        "Ruin":"Ruin"
+    },
+    "List":{
+        "New":"New",
+        "Location":"Location",
+        "accept":"accept",
+        "Who":"Who"
     }
 }

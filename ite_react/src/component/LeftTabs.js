@@ -24,6 +24,8 @@ import { Tabs } from 'antd'
 import { AppstoreOutlined, SettingOutlined, StarOutlined, WalletOutlined, UnorderedListOutlined, FileOutlined, FileDoneOutlined } from '@ant-design/icons'
 import React from 'react'
 import Dashboard from '../menu/Dashboard'
+import Deal from '../menu/Deal'
+import List from '../menu/List'
 // 引入HOC高阶函数withTranslation 和 i18n的ts类型定义WithTranslation
 import { withTranslation } from 'react-i18next'
 
@@ -53,9 +55,6 @@ class LeftTabs extends React.Component {
               <span style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <AppstoreOutlined />
                 {t('menuLeft.Dashboard')}
-                {/* <table className="tableRight">
-                  <span style={{ marginRight: '-1rem' }}>|</span>
-                </table> */}
               </span>
             }
             key="1"
@@ -72,7 +71,7 @@ class LeftTabs extends React.Component {
             }
             key="2"
           >
-            Content of List
+            <List></List>
           </TabPane>
           <TabPane
             tab={
@@ -83,7 +82,7 @@ class LeftTabs extends React.Component {
             }
             key="3"
           >
-            Content of Deal
+            <Deal></Deal>
           </TabPane>
           <Tabs disabled tab={t('menuLeft.PROFILE')}></Tabs>
           <TabPane

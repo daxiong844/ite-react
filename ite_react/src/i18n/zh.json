@@ -46,6 +46,17 @@
         "zh-CN":"中文",
         "Location":"位置",
         "select":"选择"
-
+    },
+    "Deal":{
+        "Deal History":"交易历史记录",
+        "Time":"时间",
+        "Earning":"收益",
+        "Ruin":"已摧毁"
+    },
+    "List":{
+        "New":"新增",
+        "Location":"位置",
+        "accept":"接受",
+        "Who":"创建者"
     }
 }
