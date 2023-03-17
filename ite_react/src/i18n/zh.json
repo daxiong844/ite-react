@@ -57,6 +57,11 @@
         "New":"新增",
         "Location":"位置",
         "accept":"接受",
-        "Who":"创建者"
+        "Who":"创建者",
+        "No":"需求单号",
+        "Surplus Times":"剩余时间",
+        "Edit":"编辑",
+        "Deal":"交易",
+        "Del":"删除"
     }
 }

@@ -57,6 +57,11 @@
         "New":"New",
         "Location":"Location",
         "accept":"accept",
-        "Who":"Who"
+        "Who":"Who",
+         "No":"No",
+        "Surplus Times":"Surplus Times",
+        "Edit":"Edit",
+        "Deal":"Deal",
+        "Del":"Del"
     }
 }

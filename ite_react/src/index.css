@@ -451,6 +451,22 @@ li.ant-pagination-item.ant-pagination-item-active a{
 td.ant-table-cell.TrendingItemDeposited{
   color: rgba(120, 222, 10, 1) !important;
 }
+/* .ant-table-selection */
+
+
+
+/* th.ant-table-cell.ant-table-selection-column {
+  background-color: red !important;
+  position: absolute;
+  bottom: 0rem;
+  left: 0.045rem;
+  z-index: 9999;
+} */
+
+td.ant-table-cell.TrendingItemNo{
+  color: RGBA(158, 157, 177, 1) !important;
+}
+
 
             
 

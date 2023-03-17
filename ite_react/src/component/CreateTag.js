@@ -1,4 +1,4 @@
-import { PlusSquareOutlined } from '@ant-design/icons'
+import { PlusSquareOutlined, EllipsisOutlined } from '@ant-design/icons'
 import { Input, Space, Tag, Tooltip } from 'antd'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -11,6 +11,7 @@ const CreateTag = () => {
   const [inputValue, setInputValue] = useState('')
   const [editInputIndex, setEditInputIndex] = useState(-1)
   const [editInputValue, setEditInputValue] = useState('')
+  const [isEllipsisClicked, setIsEllipsisClicked] = useState(false)
   const inputRef = useRef(null)
   const editInputRef = useRef(null)
   useEffect(() => {
@@ -69,9 +70,27 @@ const CreateTag = () => {
     color: '#fff',
     fontSize: '0.05rem'
   }
+  const spaceStyle = {
+    width: '5.92rem',
+    minHeight: '0.3rem',
+    height: isEllipsisClicked ? '' : '0.3rem',
+    overflow: isEllipsisClicked ? '' : 'hidden',
+    whiteSpace: isEllipsisClicked ? '' : 'nowrap'
+  }
+  const iconStyle = {
+    fontSize: '0.2rem',
+    color: 'RGBA(63, 95, 228, 1)',
+    position: 'absolute',
+    top: '0.42rem',
+    right: '0.3rem',
+    zIndex: '99999999999'
+  }
+  const handleEllipsisClick = () => {
+    setIsEllipsisClicked(!isEllipsisClicked)
+  }
   return (
     <Space size={[0, 8]} wrap>
-      <Space size={[0, 8]} wrap>
+      <Space size={[0, 8]} wrap style={spaceStyle}>
         {tags.map((tag, index) => {
           if (editInputIndex === index) {
             return <Input ref={editInputRef} key={tag} size="small" style={tagInputStyle} value={editInputValue} onChange={handleEditInputChange} onBlur={handleEditInputConfirm} onPressEnter={handleEditInputConfirm} />
@@ -107,7 +126,9 @@ const CreateTag = () => {
             tagElem
           )
         })}
+        <EllipsisOutlined style={iconStyle} onClick={handleEllipsisClick} />
       </Space>
+
       {inputVisible ? (
         <Input ref={inputRef} type="text" size="small" style={tagInputStyle} value={inputValue} onChange={handleInputChange} onBlur={handleInputConfirm} onPressEnter={handleInputConfirm} />
       ) : (
