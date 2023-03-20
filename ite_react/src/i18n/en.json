@@ -63,5 +63,13 @@
         "Edit":"Edit",
         "Deal":"Deal",
         "Del":"Del"
+    },
+    "DealHistoryTwo":{
+        "Status":"Status",
+        "Agree":"Agree",
+        "Unagree":"Unagree",
+        "carry out":"carry out",
+        "Cancel":"Cancel",
+        "Ruin":"Ruin"
     }
 }

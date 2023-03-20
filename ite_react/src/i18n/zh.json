@@ -63,5 +63,13 @@
         "Edit":"编辑",
         "Deal":"交易",
         "Del":"删除"
+    },
+    "DealHistoryTwo":{
+        "Status":"状态",
+        "Agree":"同意",
+        "Unagree":"不同意",
+        "carry out":"执行",
+        "Cancel":"取消",
+        "Ruin":"摧毁"
     }
 }

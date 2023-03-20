@@ -420,18 +420,43 @@ li.ant-pagination-item.ant-pagination-item-active a{
   color: rgba(236, 235, 246, 1) !important;
 }
 
-.ant-space-item .ant-tag.css-dev-only-do-not-override-10ed4xt{
+td.ant-table-cell.TrendingItemDeposited{
+  color: rgba(120, 222, 10, 1) !important;
+}
+
+td.ant-table-cell.TrendingItemNo{
+  color: RGBA(158, 157, 177, 1) !important;
+}
+
+.ant-input.css-dev-only-do-not-override-ph9edi{
+  background-color: rgba(32, 30, 67, 1);
+}
+
+.ant-input.css-dev-only-do-not-override-ph9edi::-webkit-input-placeholder{
+  color: RGBA(153, 153, 174, 1) !important;
+}
+
+.ant-input-number-input{
+  color: red !important;
+}
+
+.custom-input-number .ant-input-number-handler:nth-child(2) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ant-tag.CreatrTag{
   border: 0.01rem solid RGBA(69, 105, 250, 1);
   border-radius: 0.11rem;
   color: RGBA(69, 105, 250, 1);
 }
 
-.ant-tag.css-dev-only-do-not-override-10ed4xt:hover{
+.ant-tag.CreatrTag:hover {
   background-color: RGBA(66, 99, 235, 1);
   color: #fff !important;
 }
 
-.ant-tag.css-dev-only-do-not-override-10ed4xt:hover .anticon.anticon-close.ant-tag-close-icon{
+.ant-tag.CreatrTag:hover .anticon.anticon-close.ant-tag-close-icon{
   background-color: #fff;
   border-radius: 50%;
   color: RGBA(66, 99, 235, 1);
@@ -443,32 +468,19 @@ li.ant-pagination-item.ant-pagination-item-active a{
   position: relative;
 }
 
-.anticon.anticon-close.ant-tag-close-icon{
+.anticon.anticon-close.ant-tag-close-icon {
   opacity: 0;
   position: fixed;
 }
 
-td.ant-table-cell.TrendingItemDeposited{
-  color: rgba(120, 222, 10, 1) !important;
-}
-/* .ant-table-selection */
-
-
-
-/* th.ant-table-cell.ant-table-selection-column {
-  background-color: red !important;
-  position: absolute;
-  bottom: 0rem;
-  left: 0.045rem;
-  z-index: 9999;
-} */
-
-td.ant-table-cell.TrendingItemNo{
-  color: RGBA(158, 157, 177, 1) !important;
+tbody.ant-table-tbody:nth-child(1) td.ant-table-cell.DealHistoryTwoStatus{
+  color: red !important;
 }
 
 
-            
+
+
+          
 
 
 
