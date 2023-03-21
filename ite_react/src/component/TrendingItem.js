@@ -1,4 +1,4 @@
-import { Button, Table } from 'antd'
+import { Button, Table, Checkbox } from 'antd'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import React from 'react'
@@ -26,6 +26,26 @@ function TrendingItem() {
       newData[record.key] = { isEdited: true }
     }
     setEditedData(newData)
+  }
+  //让底部复选框可以绑定每行的复选框
+  const [selectedRowKeys, setSelectedRowKeys] = useState([])
+
+  const onSelectAll = (selected, selectedRows, changeRows) => {
+    const keys = selectedRows.map(item => item.key)
+    setSelectedRowKeys(selected ? keys : [])
+  }
+
+  const onSelect = (record, selected) => {
+    const keys = [...selectedRowKeys]
+    if (selected) {
+      keys.push(record.key)
+    } else {
+      const index = keys.indexOf(record.key)
+      if (index > -1) {
+        keys.splice(index, 1)
+      }
+    }
+    setSelectedRowKeys(keys)
   }
 
   const columns = [
@@ -92,7 +112,7 @@ function TrendingItem() {
           <Button size="small" style={{ backgroundColor: 'RGBA(32, 30, 67, 1)', color: '#fff', textAlign: 'center', fontSize: '0.06rem', borderRadius: '0.12rem', marginRight: '0.04rem' }}>
             {t('List.Deal')}
           </Button>
-          <Button size="small" style={{ backgroundColor: 'RGBA(32, 30, 67, 1)', color: 'rgba(121, 120, 141, 1)', textAlign: 'center', fontSize: '0.06rem', borderRadius: '0.0942rem', borderColor: 'rgba(121, 120, 141, 1)' }}>
+          <Button size="small" style={{ backgroundColor: 'RGBA(32, 30, 67, 1)', color: 'rgba(121, 120, 141, 1)', textAlign: 'center', fontSize: '0.06rem', borderRadius: '0.0942rem', borderColor: 'rgba(121, 120, 141, 1)' }} onClick={handleDelete}>
             {t('List.Del')}
           </Button>
         </div>
@@ -220,18 +240,39 @@ function TrendingItem() {
     }
     // add more data here
   ])
+  // 点击Del按钮删除选中的行
+  const handleDelete = () => {
+    const newData = data.filter(item => !selectedRowKeys.includes(item.key))
+    setData(newData)
+    setSelectedRowKeys([])
+  }
 
   const rowSelection = {
-    onChange: (selectedRowKeys, selectedRows) => {
-      console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows)
-    },
+    selectedRowKeys,
+    onSelectAll,
+    onSelect,
     getCheckboxProps: record => ({
       // Column configuration not to be checked
       name: record.name
     })
   }
 
-  return <Table rowSelection={rowSelection} columns={columns} dataSource={data} pagination={{ pageSize: 8 }} style={{ position: 'relative', marginTop: '0.07rem', width: '5.94rem', borderRadius: '0.1rem', background: '#201E43', textAlign: 'center', fontSize: '0.07rem', padding: '0.08rem' }} />
+  return (
+    <Table
+      rowSelection={rowSelection}
+      columns={columns}
+      dataSource={data}
+      pagination={{ pageSize: 8 }}
+      style={{ position: 'relative', marginTop: '0.07rem', width: '5.94rem', borderRadius: '0.1rem', background: '#201E43', textAlign: 'center', fontSize: '0.07rem', padding: '0.08rem' }}
+      footer={() => (
+        <Checkbox style={{ marginLeft: '-5.32rem' }} checked={selectedRowKeys.length === data.length} indeterminate={selectedRowKeys.length > 0 && selectedRowKeys.length < data.length} onChange={e => onSelectAll(e.target.checked, data)}>
+          <Button style={{ width: '0.2rem', height: '0.1rem', lineHeight: '0.05rem', backgroundColor: 'rgba(32, 30, 67, 1) ', borderColor: 'RGBA(159, 161, 173, 1)', paddingLeft: '0.04rem', borderRadius: '0.04rem', color: 'RGBA(159, 161, 173, 1)' }} onClick={handleDelete}>
+            Del
+          </Button>
+        </Checkbox>
+      )}
+    />
+  )
 }
 
 export default TrendingItem

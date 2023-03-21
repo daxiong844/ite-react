@@ -10,7 +10,9 @@ function DealHistoryTwo() {
       if (d.key === record.key) {
         return {
           ...d,
-          dashboardStatus: 'waiting you carry out'
+          dashboardStatus: <span style={{ color: 'rgba(248, 48, 5, 1)' }}>waiting you carry out</span>,
+          showBtn1: false,
+          showBtn2: false
         }
       }
       return d
@@ -23,7 +25,9 @@ function DealHistoryTwo() {
       if (d.key === record.key) {
         return {
           ...d,
-          dashboardStatus: 'waiting others carry out'
+          dashboardStatus: <span style={{ color: 'rgba(249, 229, 7, 1)' }}>waiting others carry out</span>,
+          showBtn1: false,
+          showBtn2: false
         }
       }
       return d
@@ -36,7 +40,10 @@ function DealHistoryTwo() {
       if (d.key === record.key) {
         return {
           ...d,
-          dashboardStatus: 'others apply for cancel'
+          dashboardStatus: <span style={{ color: 'rgba(248, 48, 5, 1)' }}>others apply for cancel</span>,
+          showBtn1: false,
+          showBtn2: false,
+          showBtn3: false
         }
       }
       return d
@@ -49,7 +56,11 @@ function DealHistoryTwo() {
       if (d.key === record.key) {
         return {
           ...d,
-          dashboardStatus: 'Cancel'
+          dashboardStatus: <span style={{ color: 'rgba(136, 90, 248, 1)' }}>Cancel</span>,
+          showBtn1: false,
+          showBtn2: false,
+          showBtn3: false,
+          showBtn4: false
         }
       }
       return d
@@ -62,7 +73,12 @@ function DealHistoryTwo() {
       if (d.key === record.key) {
         return {
           ...d,
-          dashboardStatus: 'Ruind'
+          dashboardStatus: <span style={{ color: 'rgba(129, 142, 155, 1)' }}>Ruind</span>,
+          showBtn1: false,
+          showBtn2: false,
+          showBtn3: false,
+          showBtn4: false,
+          showBtn5: false
         }
       }
       return d
@@ -134,21 +150,31 @@ function DealHistoryTwo() {
       align: 'center',
       render: (text, record) => (
         <div style={{ display: 'flex' }}>
-          <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleAgree(record)}>
-            {t('DealHistoryTwo.Agree')}
-          </Button>
-          <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleUnagree(record)}>
-            {t('DealHistoryTwo.Unagree')}
-          </Button>
-          <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCarryOut(record)}>
-            {t('DealHistoryTwo.carry out')}
-          </Button>
-          <Button size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCancel(record)}>
-            {t('DealHistoryTwo.Cancel')}
-          </Button>
-          <Button size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }} onClick={() => handleRuin(record)}>
-            {t('DealHistoryTwo.Ruin')}
-          </Button>
+          {record.showBtn1 && (
+            <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleAgree(record)}>
+              {t('DealHistoryTwo.Agree')}
+            </Button>
+          )}
+          {record.showBtn2 && (
+            <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleUnagree(record)}>
+              {t('DealHistoryTwo.Unagree')}
+            </Button>
+          )}
+          {record.showBtn3 && (
+            <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCarryOut(record)}>
+              {t('DealHistoryTwo.carry out')}
+            </Button>
+          )}
+          {record.showBtn4 && (
+            <Button size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCancel(record)}>
+              {t('DealHistoryTwo.Cancel')}
+            </Button>
+          )}
+          {record.showBtn5 && (
+            <Button size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }} onClick={() => handleRuin(record)}>
+              {t('DealHistoryTwo.Ruin')}
+            </Button>
+          )}
         </div>
       )
     }
@@ -161,9 +187,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'waiting you carry out',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '2',
@@ -171,9 +202,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'waiting others carry out',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '3',
@@ -181,9 +217,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'Done',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '4',
@@ -191,9 +232,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'others apply for cancel',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '5',
@@ -201,9 +247,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'Cancel',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '6',
@@ -211,9 +262,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'Ruind',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '7',
@@ -221,9 +277,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'others unagree cancel',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '8',
@@ -231,9 +292,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: 'others apply for cancel',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '9',
@@ -241,9 +307,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: '10.5 USDT',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '10',
@@ -251,9 +322,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: '10.5 USDT',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '11',
@@ -261,9 +337,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: '10.5USDT',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '12',
@@ -271,9 +352,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: '10.5USDT',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     },
     {
       key: '13',
@@ -281,9 +367,14 @@ function DealHistoryTwo() {
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
-      dashboardStatus: '10.5USDT',
+      dashboardStatus: '',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      showBtn1: true,
+      showBtn2: true,
+      showBtn3: true,
+      showBtn4: true,
+      showBtn5: true
     }
     // add more data here
   ])

@@ -473,9 +473,123 @@ td.ant-table-cell.TrendingItemNo{
   position: fixed;
 }
 
-tbody.ant-table-tbody:nth-child(1) td.ant-table-cell.DealHistoryTwoStatus{
-  color: red !important;
+
+/* DealHistoryTwo中的7个Tag标签样式 */
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag{
+  margin-top: 0.12rem;
+  margin-bottom: 0.12rem;
 }
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagOne{
+  color: red;
+  border: 0.01rem solid red;
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagTwo{
+  width: 0.9rem;
+  color: #000;
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+  background-color: RGBA(249, 229, 7, 1);
+  border: 0;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagTwo .anticon.anticon-close.ant-tag-close-icon{
+  opacity: 1 !important;
+  color: RGBA(249, 229, 7, 1);
+  background-color: #000;
+  border-radius: 50%;
+  width: 0.1rem;
+  height: 0.1rem;
+  line-height: 0.11rem;
+  margin-top: 0.025rem;
+  margin-left: 0.02rem;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagThree{
+  color: #000;
+  width: 0.35rem;
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+  background-color: RGBA(46, 212, 122, 1);
+  border: 0;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagThree .anticon.anticon-close.ant-tag-close-icon {
+  opacity: 1 !important;
+  color: RGBA(46, 212, 122, 1);
+  background-color: #000;
+  border-radius: 50%;
+  width: 0.1rem;
+  height: 0.1rem;
+  line-height: 0.11rem;
+  margin-top: 0.025rem;
+  margin-left: 0.02rem;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagFour {
+  color: red;
+  border: 0.01rem solid red;
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagFive {
+  color: RGBA(136, 90, 248, 1);
+  border: 0.01rem solid RGBA(136, 90, 248, 1);
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagSix {
+  color: RGBA(129, 142, 155, 1);
+  border: 0.01rem solid RGBA(129, 142, 155, 1);
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagSeven {
+  color: #fff;
+  width: 0.85rem;
+  height: 0.15rem;
+  border-radius: 0.075rem;
+  line-height: 0.15rem;
+  background-color: red;
+  border: 0;
+}
+
+.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagSeven .anticon.anticon-close.ant-tag-close-icon {
+  opacity: 1 !important;
+  color: red;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 0.1rem;
+  height: 0.1rem;
+  line-height: 0.11rem;
+  margin-top: 0.025rem;
+  margin-left: 0.02rem;
+}
+
+th.ant-table-cell.ant-table-selection-column .ant-table-selection{
+  opacity: 0;
+}
+
+.ant-table-footer{
+  background-color: rgba(32, 30, 67, 1) !important;
+  border-radius: 0 !important;
+}
+
+
+
 
 
 
