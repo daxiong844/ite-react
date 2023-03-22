@@ -27,7 +27,8 @@
         "Withdraw":"Withdraw",
         "NEW ITEM":"NEW ITEM",
         "Top Creators":"Top Creators",
-        "Follow":"Follow"
+        "Follow":"Follow",
+        "Ruin":"Ruin"
     },
      "layoutTop": {
         "Language":"Language",
@@ -71,5 +72,38 @@
         "carry out":"carry out",
         "Cancel":"Cancel",
         "Ruin":"Ruin"
+    },
+       "Airdrop":{
+        "Setting":"Setting",
+        "Desposit":"Desposit",
+        "Earning":"Earning",
+        "Username":"Username",
+        "Bio":"Bio",
+        "Email Address":"Email Address",
+        "Social Connections":"Social Connections",
+        "Help collectors verify your account by connecting social accounts":"Help collectors verify your account by connecting social accounts",
+        "Connect":"Connect",
+        "Links":"Links",
+        "Wallet Address":"Wallet Address",
+        "Save":"Save",
+        "Profile Image":"Profile Image",
+        "Enter username":"Enter username",
+        "Tell the World your story!":"Tell the World your Story!",
+        "Enter email":"Enter email",
+        "yoursite.io":"yoursite.io",
+        "Your Total Desposit":"Your Total Desposit",
+        "Add":"Add",
+        "Lock Desposit":"Lock Desposit",
+        "Unlock Desposit":"Unlock Desposit",
+        "Withdraw":"Withdraw",
+        "Records":"Records",
+        "No":"N",
+        "Action":"Action",
+        "Amount":"Amount",
+        "After Amount":"After Amount",
+        "Time":"Time",
+        "Info":"Info",
+         "Total Earning of Ite":"Total Earning of Ite",
+        "Total Earning of USDT":"Total Earning of USDT"
     }
 }

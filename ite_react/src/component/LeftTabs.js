@@ -26,6 +26,9 @@ import React from 'react'
 import Dashboard from '../menu/Dashboard'
 import Deal from '../menu/Deal'
 import List from '../menu/List'
+import MyDeal from '../menu/MyDeal'
+import MyItem from '../menu/MyItem'
+import Airdrop from '../menu/Airdrop'
 // 引入HOC高阶函数withTranslation 和 i18n的ts类型定义WithTranslation
 import { withTranslation } from 'react-i18next'
 
@@ -105,7 +108,7 @@ class LeftTabs extends React.Component {
             }
             key="5"
           >
-            Content of My Items
+            <MyItem></MyItem>
           </TabPane>
           <TabPane
             tab={
@@ -116,7 +119,7 @@ class LeftTabs extends React.Component {
             }
             key="6"
           >
-            Content of My Deal
+            <MyDeal></MyDeal>
           </TabPane>
           <TabPane
             tab={
@@ -127,7 +130,7 @@ class LeftTabs extends React.Component {
             }
             key="7"
           >
-            Content of Airdrop
+            <Airdrop></Airdrop>
           </TabPane>
         </Tabs>
       </div>

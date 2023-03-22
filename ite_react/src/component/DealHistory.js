@@ -64,11 +64,30 @@ function DealHistory() {
       key: 'action',
       width: '0.1rem',
       align: 'center',
-      render: (text, record) => (
-        <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
-          {t('Dashboard.Done')}
-        </Button>
-      )
+      render: (text, record) => {
+        switch (record.buttonType) {
+          case 'done':
+            return (
+              <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+                {t('Dashboard.Done')}
+              </Button>
+            )
+          case 'doing':
+            return (
+              <Button size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+                {t('Dashboard.Doing')}
+              </Button>
+            )
+          case 'ruin':
+            return (
+              <Button size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+                {t('Dashboard.Ruin')}
+              </Button>
+            )
+          default:
+            return null
+        }
+      }
     }
   ]
 
@@ -81,127 +100,140 @@ function DealHistory() {
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'done'
     },
     {
-      key: '1',
+      key: '2',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'doing'
     },
     {
-      key: '1',
+      key: '3',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'ruin'
     },
     {
-      key: '1',
+      key: '4',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'done'
     },
     {
-      key: '1',
+      key: '5',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'doing'
     },
     {
-      key: '1',
+      key: '6',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'ruin'
     },
     {
-      key: '1',
+      key: '7',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'done'
     },
     {
-      key: '1',
+      key: '8',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'doing'
     },
     {
-      key: '1',
+      key: '9',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'ruin'
     },
     {
-      key: '1',
+      key: '10',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'done'
     },
     {
-      key: '1',
+      key: '11',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'doing'
     },
     {
-      key: '1',
+      key: '12',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'ruin'
     },
     {
-      key: '1',
+      key: '13',
       avatar1: 'https://i03piccdn.sogoucdn.com/4c3a3d0b5f62a8ca',
       avatar2: 'https://i03piccdn.sogoucdn.com/5f54b8b788776e92',
       dashboardNeed: 'I want a basketball, like myco jodon...',
       dashboardProvide: 'i will provide a baseball. just you see...',
       dashboardDeposited: '10.5USDT',
       dealTime: '01/01/2023 10:10:10',
-      dealEarning: '100 Ite'
+      dealEarning: '100 Ite',
+      buttonType: 'done'
     }
     // add more data here
   ]

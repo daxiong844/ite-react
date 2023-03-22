@@ -27,7 +27,8 @@
         "Withdraw":"提现",
         "NEW ITEM":"新增需求单",
         "Top Creators":"顶级创建者",
-        "Follow":"跟随"
+        "Follow":"跟随",
+        "Ruin":"已摧毁"
     },
     "layoutTop": {
         "Language":"语言",
@@ -71,5 +72,38 @@
         "carry out":"执行",
         "Cancel":"取消",
         "Ruin":"摧毁"
+    },
+    "Airdrop":{
+        "Setting":"设置",
+        "Desposit":"存款",
+        "Earning":"收益",
+        "Username":"用户名",
+        "Bio":"简介",
+        "Email Address":"邮件地址",
+        "Social Connections":"连接社交账户",
+        "Help collectors verify your account by connecting social accounts":"通过连接社交帐户帮助收集者验证您的帐户",
+        "Connect":"连接",
+        "Links":"链接",
+        "Wallet Address":"钱包地址",
+        "Save":"保存",
+        "Profile Image":"个人简介照片",
+        "Enter username":"输入用户名",
+        "Tell the World your story!":"告诉世界你的故事！",
+        "Enter email":"输入邮箱",
+        "yoursite.io":"您的站点",
+        "Your Total Desposit":"您的全部存款",
+        "Add":"增加",
+        "Lock Desposit":"锁定存款",
+        "Unlock Desposit":"解锁存款",
+        "Withdraw":"提现",
+        "Records":"记录",
+        "No":"需求单号",
+        "Action":"状态",
+        "Amount":"数量",
+        "After Amount":"扣除金额",
+        "Time":"时间",
+        "Info":"信息",
+        "Total Earning of Ite":"Ite总收益",
+        "Total Earning of USDT":"USDT总收益"
     }
 }

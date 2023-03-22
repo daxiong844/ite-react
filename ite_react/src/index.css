@@ -313,14 +313,6 @@ code {
   border-color: rgba(196, 196, 196, 0.40);
 }
 
-/* .ant-select-selection-search{
-  background-color: RGBA(20, 20, 20, 1) !important;
-}
-
-.ant-select.ant-select-in-form-item.ant-select-status-success.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-search-input{
-  background-color: RGBA(20, 20, 20, 1) !important;
-} */
-
 .ant-select.ant-select-in-form-item.newItemSelect.ant-select-status-success.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-item{
   background-color: RGBA(20, 20, 20, 1) !important;
 }
@@ -465,12 +457,11 @@ td.ant-table-cell.TrendingItemNo{
   line-height: 0.1rem;
   text-align: center;
   opacity: 1;
-  position: relative;
+  position: relative !important;
 }
 
 .anticon.anticon-close.ant-tag-close-icon {
   opacity: 0;
-  position: fixed;
 }
 
 
@@ -587,6 +578,62 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
   background-color: rgba(32, 30, 67, 1) !important;
   border-radius: 0 !important;
 }
+
+.anticon.anticon-close.ant-tag-close-icon{
+  position: absolute !important;
+}
+
+.AirdropTabs .ant-tabs-nav{
+  background-color: RGBA(11, 10, 36, 1);
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+.AirdropTabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active{
+  background-color: RGBA(11, 10, 36, 1);
+}
+
+.AirdropTabs .ant-tabs-ink-bar.ant-tabs-ink-bar-animated{
+  opacity: 0;
+}
+
+.AirdropSettingLeft label{
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+.AirdropSettingWalletP{
+  border: 0.01rem solid rgba(196, 196, 196, 0.40);
+  line-height: 0.2rem;
+  padding-left: 0.05rem;
+}
+
+.AirdropSettingRight label {
+  color: #fff !important;
+  font-weight: 700 !important;
+  margin-left: 0.08rem !important;
+}
+
+.AirdropSettingLeft .ant-form-item-control-input{
+  width: 2.4rem;
+}
+
+.AirDropDesposit .ant-card.ant-card-bordered.css-dev-only-do-not-override-ph9edi{
+  background: linear-gradient(to bottom right, #8489FF, #451CFF);
+  border: 0;
+  border-radius: 0.08rem;
+}
+
+.AirDropDesposit .ant-statistic-title{
+  color: #fff;
+  margin-left: -0.02rem;
+}
+
+.AirDropDespositCardTwo .ant-statistic-content{
+  margin-top: 0.1rem !important;
+}
+
+
 
 
 
