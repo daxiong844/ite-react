@@ -1,25 +1,3 @@
-// import { Tabs } from 'antd'
-// import { useState } from 'react'
-// const App = () => {
-//   const [tabPosition] = useState('left')
-//   // const changeTabPosition = e => {
-//   //   setTabPosition(e.target.value)
-//   // }
-//   return (
-//     <Tabs
-//       tabPosition={tabPosition}
-//       items={new Array(8).fill(null).map((_, i) => {
-//         const id = String(i + 1)
-//         return {
-//           label: `Tab ${id}`,
-//           key: id,
-//           children: `Content of Tab ${id}`
-//         }
-//       })}
-//     />
-//   )
-// }
-// export default App
 import { Tabs } from 'antd'
 import { AppstoreOutlined, SettingOutlined, StarOutlined, WalletOutlined, UnorderedListOutlined, FileOutlined, FileDoneOutlined } from '@ant-design/icons'
 import React from 'react'
@@ -29,6 +7,7 @@ import List from '../menu/List'
 import MyDeal from '../menu/MyDeal'
 import MyItem from '../menu/MyItem'
 import Airdrop from '../menu/Airdrop'
+import ModalBounty from '../menu/Portfolio'
 // 引入HOC高阶函数withTranslation 和 i18n的ts类型定义WithTranslation
 import { withTranslation } from 'react-i18next'
 
@@ -97,7 +76,7 @@ class LeftTabs extends React.Component {
             }
             key="4"
           >
-            Content of My Portfolio
+            <ModalBounty></ModalBounty>
           </TabPane>
           <TabPane
             tab={

@@ -105,5 +105,13 @@
         "Info":"Info",
          "Total Earning of Ite":"Total Earning of Ite",
         "Total Earning of USDT":"Total Earning of USDT"
+    },
+    "Portfolio":{
+        "Social Posting Bounty":"Social Posting Bounty",
+        "View more...":"View more...",
+        "Submit Work":"Submit Work",
+        "ACTIVITY":"ACTIVITY",
+        "days ago":"days ago",
+        "Write a comment...":"Write a comment..."
     }
 }

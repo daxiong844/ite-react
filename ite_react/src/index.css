@@ -633,6 +633,57 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
   margin-top: 0.1rem !important;
 }
 
+.PortfolioModal .ant-modal-header{
+  background-color: RGBA(29, 29, 39, 1);
+  margin-top: 0.1rem;
+  border-radius: 0;
+}
+
+.PortfolioModal .ant-modal-body{
+  background-color: RGBA(29, 29, 39, 1);
+  margin-top: -0.08rem ;
+}
+
+.PortfolioModal .ant-modal-content{
+  position: absolute;
+  top: 0.2rem;
+  left: -1.4rem;
+  width: 5rem;
+  border-radius: 0.05rem !important;
+}
+
+.PortfolioModal .ant-modal-title{
+  color: #fff;
+}
+
+.PortfolioTextOne{
+  height: 1rem;
+  overflow: hidden;
+}
+
+.PortfolioModal .ant-timeline-item-tail{
+  background-color: RGBA(42, 44, 51, 1) ;
+  margin-left: 0.05rem;
+}
+
+.PortfolioModal .ant-timeline-item-head.ant-timeline-item-head-custom.ant-timeline-item-head-blue{
+  background-color: RGBA(29, 29, 39, 1);
+}
+
+.PortfolioModal .ant-avatar{
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+.PortfolioModal .ant-input.css-dev-only-do-not-override-ph9edi::placeholder{
+  color: RGBA(103, 105, 113, 1) !important;
+}
+
+
+
+
+
+
 
 
 

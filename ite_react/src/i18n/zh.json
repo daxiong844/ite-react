@@ -105,5 +105,13 @@
         "Info":"信息",
         "Total Earning of Ite":"Ite总收益",
         "Total Earning of USDT":"USDT总收益"
+    },
+     "Portfolio":{
+        "Social Posting Bounty":"社交帖子赏金",
+        "View more...":"查看更多...",
+        "Submit Work":"提交工作",
+        "ACTIVITY":"活动专区",
+        "days ago":"天前",
+        "Write a comment...":"写一条评论..."
     }
 }
