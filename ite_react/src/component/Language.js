@@ -32,7 +32,7 @@ function Language() {
   return (
     <div id="components-dropdown-demo-dropdown-button" style={{ position: 'absolute', top: '0.3rem', right: '2.12rem' }}>
       <Dropdown overlay={menu}>
-        <Button style={{ background: '#201E43', border: 0, height: '0.15rem', color: '#ECEBF6', fontSize: '0.07rem' }}>
+        <Button className="languageButton" style={{ background: '#201E43', border: 0, height: '0.15rem', color: '#ECEBF6', fontSize: '0.07rem' }}>
           {t('layoutTop.Language')}
           <DownOutlined style={{ fontSize: '0.05rem' }} />
         </Button>

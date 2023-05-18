@@ -8,8 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -679,6 +677,64 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
   color: RGBA(103, 105, 113, 1) !important;
 }
 
+.newItemLeft label{
+  color:rgba(236, 235, 246, 0.80) !important;
+}
+
+.newItemRight label{
+  color:rgba(236, 235, 246, 0.80) !important;
+}
+
+.newItemRight .ant-select-selector{
+  background-color: RGBA(20, 20, 20, 1) !important;
+}
+
+.newItemRight .newItemLanguage .ant-select-selection-item{
+  background-color: RGBA(20, 20, 20, 1) !important;
+  color: rgba(196, 196, 196, 0.40);
+}
+
+.newItemRight .ant-select-arrow{
+  opacity: 0;
+}
+
+.newItemRight .newItemLanguage .ant-select-arrow {
+  color: rgba(196, 196, 196, 0.40);
+  opacity: 1;
+}
+
+.newItemRight .ant-select-selection-item{
+  background-color: #fff !important;
+}
+
+.newItemRight .ant-form-item-control-input-content .ant-input{
+  color: rgba(196, 196, 196, 0.40) !important;
+}
+
+.newItemLeft .ant-form-item-control-input-content .ant-input{
+  color: rgba(196, 196, 196, 0.40) !important;
+}
+
+.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-default.createTagButton{
+  color: RGBA(69, 105, 250, 1);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border-color: RGBA(69, 105, 250, 1);
+  font-size: 0.01rem;
+  line-height: 0.12rem;
+}
+
+
+
+/* 小屏幕设备样式 */
+/* @media screen and (max-width: 1300px) {
+    .ItemBottom{
+      background-color: red;
+    }
+    span.like {
+      color: red;
+    }
+} */
 
 
 

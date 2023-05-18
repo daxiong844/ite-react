@@ -28,7 +28,7 @@ function ItemCard() {
         I will provide a baseball, and i Want a baskerball. Do you understant my mean. If you accept the i will first lvyue, hope you honers, do think same as me. you are well goods.I will provide a baseball, and i Want a baskerball. Do you understant my mean. If you accept the i will first lvyue,
         hope you honers, do think same as me. you are well goods.
       </span>
-      <div style={{ position: 'absolute', top: '1.48rem', left: '0.05rem', width: '1.15rem', height: '0.14rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="ItemBottom" style={{ position: 'absolute', top: '1.48rem', left: '0.05rem', width: '1.15rem', height: '0.14rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ color: '#ECEBF6', fontSize: '0.06rem' }}>{t('Dashboard.Deposited')}</span>
         <span style={{ color: '#B7ABFF', fontSize: '0.07rem' }}>0.99 USDT</span>
         <span style={{ color: '#D3D1E0', fontsize: '0.05rem' }}>3 day left</span>

@@ -68,19 +68,19 @@ function DealHistory() {
         switch (record.buttonType) {
           case 'done':
             return (
-              <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+              <Button className="dealHistoryButton" size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
                 {t('Dashboard.Done')}
               </Button>
             )
           case 'doing':
             return (
-              <Button size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+              <Button className="dealHistoryButton" size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
                 {t('Dashboard.Doing')}
               </Button>
             )
           case 'ruin':
             return (
-              <Button size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+              <Button className="dealHistoryButton" size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
                 {t('Dashboard.Ruin')}
               </Button>
             )

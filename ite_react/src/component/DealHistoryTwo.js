@@ -151,27 +151,27 @@ function DealHistoryTwo() {
       render: (text, record) => (
         <div style={{ display: 'flex' }}>
           {record.showBtn1 && (
-            <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleAgree(record)}>
+            <Button className="dealHistoryTwoButton" size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleAgree(record)}>
               {t('DealHistoryTwo.Agree')}
             </Button>
           )}
           {record.showBtn2 && (
-            <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleUnagree(record)}>
+            <Button className="dealHistoryTwoButton" size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleUnagree(record)}>
               {t('DealHistoryTwo.Unagree')}
             </Button>
           )}
           {record.showBtn3 && (
-            <Button size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCarryOut(record)}>
+            <Button className="dealHistoryTwoButton" size="small" style={{ backgroundColor: 'RGBA(248, 48, 5, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCarryOut(record)}>
               {t('DealHistoryTwo.carry out')}
             </Button>
           )}
           {record.showBtn4 && (
-            <Button size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCancel(record)}>
+            <Button className="dealHistoryTwoButton" size="small" style={{ backgroundColor: 'RGBA(136, 90, 248, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem', marginRight: '0.05rem' }} onClick={() => handleCancel(record)}>
               {t('DealHistoryTwo.Cancel')}
             </Button>
           )}
           {record.showBtn5 && (
-            <Button size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }} onClick={() => handleRuin(record)}>
+            <Button className="dealHistoryTwoButton" size="small" style={{ backgroundColor: 'RGBA(129, 142, 155, 1)', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }} onClick={() => handleRuin(record)}>
               {t('DealHistoryTwo.Ruin')}
             </Button>
           )}

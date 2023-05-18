@@ -1,12 +1,11 @@
 import { Tabs } from 'antd'
-import { AppstoreOutlined, SettingOutlined, StarOutlined, WalletOutlined, UnorderedListOutlined, FileOutlined, FileDoneOutlined } from '@ant-design/icons'
+import { AppstoreOutlined, StarOutlined, WalletOutlined, UnorderedListOutlined, FileOutlined, FileDoneOutlined } from '@ant-design/icons'
 import React from 'react'
 import Dashboard from '../menu/Dashboard'
 import Deal from '../menu/Deal'
 import List from '../menu/List'
 import MyDeal from '../menu/MyDeal'
 import MyItem from '../menu/MyItem'
-import Airdrop from '../menu/Airdrop'
 import ModalBounty from '../menu/Portfolio'
 // 引入HOC高阶函数withTranslation 和 i18n的ts类型定义WithTranslation
 import { withTranslation } from 'react-i18next'
@@ -99,17 +98,6 @@ class LeftTabs extends React.Component {
             key="6"
           >
             <MyDeal></MyDeal>
-          </TabPane>
-          <TabPane
-            tab={
-              <span>
-                <SettingOutlined />
-                {t('menuLeft.Airdrop')}
-              </span>
-            }
-            key="7"
-          >
-            <Airdrop></Airdrop>
           </TabPane>
         </Tabs>
       </div>

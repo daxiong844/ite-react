@@ -57,7 +57,7 @@ function DealList() {
           </td>
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
-            <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+            <Button className="DealButton" size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
               {t('Dashboard.Done')}
             </Button>
           </td>
@@ -80,7 +80,7 @@ function DealList() {
           </td>
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
-            <Button size="small" style={{ backgroundColor: '#5639FF', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+            <Button className="DealButton" size="small" style={{ backgroundColor: '#5639FF', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
               {t('Dashboard.Doing')}
             </Button>
           </td>
@@ -104,7 +104,7 @@ function DealList() {
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
             {' '}
-            <Button size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+            <Button className="DealButton" size="small" style={{ backgroundColor: '#05CD99', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
               {t('Dashboard.Done')}
             </Button>
           </td>
@@ -127,7 +127,7 @@ function DealList() {
           </td>
           <td style={{ width: '0.5rem', height: '0.25rem' }}>10.5USDT</td>
           <td>
-            <Button size="small" style={{ backgroundColor: '#5639FF', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
+            <Button className="DealButton" size="small" style={{ backgroundColor: '#5639FF', color: '#fff', border: 'none', textAlign: 'center', fontSize: '0.06rem' }}>
               {t('Dashboard.Doing')}
             </Button>
           </td>

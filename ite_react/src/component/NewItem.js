@@ -253,6 +253,9 @@ const NewItem = () => {
                 required: true
               }
             ]}
+            labelCol={{
+              span: 8
+            }}
             className="newItemLanguage"
           >
             <Select placeholder={t('newItemCard.select')} className="newItemSelect">
