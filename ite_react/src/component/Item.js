@@ -1,10 +1,17 @@
 import { Card, Avatar } from 'antd'
-import { HeartOutlined } from '@ant-design/icons'
+import { HeartOutlined, HeartFilled } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
 const { Meta } = Card
 function ItemCard() {
   const { t } = useTranslation()
+
+  const [liked, setLiked] = useState(false)
+
+  const handleLike = () => {
+    setLiked(!liked)
+  }
   return (
     <Card
       hoverable
@@ -36,8 +43,8 @@ function ItemCard() {
       <span className="contentTop" style={{ position: 'absolute', top: '0.18rem', left: '0.22rem', width: '0.8rem', height: '0.3rem', color: '#fff', fontSize: '0.09rem' }}>
         I want a baseketball of new bought itmI want a baseketball of new bought itmI want a baseketball of new bought itm
       </span>
-      <span className="like" style={{ position: 'absolute', top: '0.08rem', right: '0.07rem', width: '0.15rem', height: '0.15rem' }}>
-        <HeartOutlined style={{ fontSize: '0.08rem' }} />
+      <span className="like" style={{ position: 'absolute', top: '0.08rem', right: '0.07rem', width: '0.15rem', height: '0.15rem' }} onClick={handleLike}>
+        {liked ? <HeartFilled style={{ fontSize: '0.08rem', color: 'red' }} /> : <HeartOutlined style={{ fontSize: '0.08rem' }} />}
       </span>
     </Card>
   )

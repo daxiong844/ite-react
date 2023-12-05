@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import NewItem from './NewItem'
 
-function CreateTag() {
+function CreateTag({ onTagClick }) {
   const { t } = useTranslation()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [buttonStates, setButtonStates] = useState([])
@@ -23,6 +23,9 @@ function CreateTag() {
     const newButtonStates = [...buttonStates]
     newButtonStates[index] = !newButtonStates[index]
     setButtonStates(newButtonStates)
+    // 点击标签时调用回调函数，并将选中的标签内容传递给父组件
+    const selectedTag = newButtonStates[index] ? buttonContents[index] : null
+    onTagClick(selectedTag)
   }
   const handleClose = event => {
     if (event.target === event.currentTarget) {
@@ -32,8 +35,11 @@ function CreateTag() {
   const handleEllipsisClick = () => {
     setIsExpanded(!isExpanded)
   }
+  const handleCreate = () => {
+    setIsModalOpen(false)
+  }
 
-  const buttonContents = ['Development', 'Shopping', 'Exchange', 'Design', 'Money', 'House', 'Exchange', 'Design', 'Money', 'House', 'Development', 'Exchange', 'Design', 'Money', 'House', 'Exchange', 'Design', 'Money']
+  const buttonContents = ['Development', 'Shopping', 'Exchange', 'Design', 'Money', 'House', 'Exchange', 'Design', 'Money', 'House', 'Development', 'Exchange', 'Design', 'Money', 'House', 'Exchange', 'Design', 'Money', 'basketball']
 
   return (
     <>
@@ -41,7 +47,8 @@ function CreateTag() {
         <PlusSquareOutlined style={{ color: '#fff', fontSize: '0.08rem' }} /> {t('List.New')}
       </div>
       <Modal footer={null} centered width="5.61rem" maskStyle={{ backgroundColor: 'rgba(196, 196, 196, 0.40)' }} bodyStyle={{ height: '3.2rem' }} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} destroyOnClose="true">
-        <NewItem></NewItem>
+        {/* 传递给子组件NewItem一个onCreate方法，使得点击创建按钮时，隐藏Modal */}
+        <NewItem onCreate={handleCreate} />
       </Modal>
       <div className="createTag" style={{ height: isExpanded ? '' : '0.4rem' }}>
         {buttonContents.map((content, index) => (

@@ -1,70 +1,66 @@
 body {
   height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.ant-tabs-nav{
+.ant-tabs-nav {
   width: 16.6666666666666666667%;
 }
 
-.css-dev-only-do-not-override-10ed4xt ::placeholder{
+.css-dev-only-do-not-override-10ed4xt ::placeholder {
   color: rgba(236, 235, 246, 0.62);
 }
 
-.ant-tabs-nav{
-  background-color: #201E43;
+.ant-tabs-nav {
+  background-color: #201e43;
 }
 
-.ant-tabs{
-  background-color: #0B0A24;
+.ant-tabs {
+  background-color: #0b0a24;
 }
 
- .ant-tabs-tab-btn{
+.ant-tabs-tab-btn {
   color: #727190;
 }
 
-.ant-tabs-tab-btn:hover{
-  color: #B7ABFF;
+.ant-tabs-tab-btn:hover {
+  color: #b7abff;
 }
 
 #rc-tabs-3-tab-null:hover {
-  color:#727190 ;
+  color: #727190;
 }
 
-.ant-tabs-content{
+.ant-tabs-content {
   color: white;
 }
 
-.ant-tabs-left{
+.ant-tabs-left {
   height: 6.45rem;
 }
 
-.ant-tabs-nav-list .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
-  color: #B7ABFF;
+.ant-tabs-nav-list .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #b7abff;
 }
 
-.ant-tabs-nav-list{
+.ant-tabs-nav-list {
   width: 86%;
   margin-left: 0.172rem;
 }
 
-
-.ant-tabs-nav-list .ant-tabs-tab{
+.ant-tabs-nav-list .ant-tabs-tab {
   width: 1.095rem;
   height: 0.245rem;
 }
 
-.ant-tabs-nav-list .ant-tabs-tab-active{
+.ant-tabs-nav-list .ant-tabs-tab-active {
   border-top-left-radius: 0.03rem;
   border-bottom-left-radius: 0.03rem;
   /* background-color: red; */
@@ -77,43 +73,42 @@ code {
   box-shadow: -0.01rem 0rem 0.05rem 0.01rem rgba(106, 91, 255, 0.16);
 }
 
-
-.ant-input.css-dev-only-do-not-override-10ed4xt{
-  background-color: #201E43;
+.ant-input.css-dev-only-do-not-override-10ed4xt {
+  background-color: #201e43;
 }
 
-.ant-avatar.ant-avatar-circle{
+.ant-avatar.ant-avatar-circle {
   width: 0.1rem;
   height: 0.1rem;
   margin-left: 0.095rem;
 }
 
-.ant-card-meta-detail{
+.ant-card-meta-detail {
   margin-left: -0.1rem;
 }
 
-.ant-card-meta-detail .ant-card-meta-title{
+.ant-card-meta-detail .ant-card-meta-title {
   margin-left: 0.06rem;
   margin-top: 0.001rem;
   font-size: 0.09rem;
-  color: #ECEBF7;
+  color: #ecebf7;
 }
 
-.content{
+.content {
   display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6; 
-    overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
 }
 
-.contentTop{
-   display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; 
-    overflow: hidden;
+.contentTop {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
-.like{
+.like {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,19 +117,19 @@ code {
   border-radius: 0.03rem;
 }
 
-.earningTop{
+.earningTop {
   width: 1.54rem;
   margin-top: -0.12rem;
   margin-left: -0.1rem;
 }
 
-.earningMiddle{
+.earningMiddle {
   margin-top: 0.02rem;
   margin-left: -0.015rem;
   width: 1.25rem;
   height: 0.9rem;
   border-radius: 0.06rem;
-  background: linear-gradient(to bottom right, #8489FF, #451CFF);
+  background: linear-gradient(to bottom right, #8489ff, #451cff);
 }
 
 /* .tableRight{
@@ -149,71 +144,67 @@ code {
   overflow: hidden;
 } */
 
-.messageP{
+.messageP {
   background-image: url(../public/photos/Group\ 184@2x.png);
 }
 
-.ant-btn .anticon .anticon-credit-card svg{
+.ant-btn .anticon .anticon-credit-card svg {
   background-color: red;
 }
 
-.App{
+.App {
   min-width: 7.5rem;
   min-height: 1rem;
 }
 
-.ant-modal-content{
+.ant-modal-content {
   background-color: rgba(22, 22, 29, 1) !important;
   border-radius: 0.1rem !important;
 }
 
-.ant-modal-close{
-  color: rgba(236, 235, 246, 0.80) !important;
+.ant-modal-close {
+  color: rgba(236, 235, 246, 0.8) !important;
 }
 
-.ant-upload{
+.ant-upload {
   border-radius: 0.06rem;
   background-color: rgba(20, 20, 20, 1);
 }
 
-.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label{
-  color: rgba(236, 235, 246, 0.80);
+.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label {
+  color: rgba(236, 235, 246, 0.8);
   font-size: 0.09rem;
 }
 
-.ant-upload.ant-upload-select{
+.ant-upload.ant-upload-select {
   width: 0.3rem !important;
   height: 0.3rem !important;
   margin-top: -0.05rem;
-  border-color: rgba(196, 196, 196, 0.40) !important;
+  border-color: rgba(196, 196, 196, 0.4) !important;
   border-radius: 0.02rem !important;
 }
 
-.ant-input.css-dev-only-do-not-override-10ed4xt{
-  color: rgba(236, 235, 246, 0.80) !important;
+.ant-input.css-dev-only-do-not-override-10ed4xt {
+  color: rgba(236, 235, 246, 0.8) !important;
 }
 
-.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label{
+.ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt label {
   font-size: 0.0755rem;
 }
 
-.ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector{
+.ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector {
   background-color: RGBA(20, 20, 20, 1) !important;
-  border-color: rgba(196, 196, 196, 0.40) !important;
-  color: rgba(196, 196, 196, 0.40) !important;
+  border-color: rgba(196, 196, 196, 0.4) !important;
+  color: rgba(196, 196, 196, 0.4) !important;
 }
 
-
-
-.ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-arrow{
-  color: rgba(196, 196, 196, 0.40) !important;
+.ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-arrow {
+  color: rgba(196, 196, 196, 0.4) !important;
 }
 
-.ant-modal-body .ant-form.ant-form-vertical.css-dev-only-do-not-override-10ed4xt .newItemRight{
-  border-left: 0.01rem solid rgba(255, 255, 255, 0.10) !important;
+.ant-modal-body .ant-form.ant-form-vertical.css-dev-only-do-not-override-10ed4xt .newItemRight {
+  border-left: 0.01rem solid rgba(255, 255, 255, 0.1) !important;
 }
-
-
 
 .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required::before {
   position: absolute;
@@ -225,43 +216,41 @@ code {
   left: 0.3rem;
 }
 
-
-
 .ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required::before {
   position: absolute;
   left: 0.34rem;
 }
 
-.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required{
+.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-4.ant-form-item-label.css-dev-only-do-not-override-10ed4xt .ant-form-item-required {
   font-size: 0.07rem;
 }
 
-.ant-select-selector{
+.ant-select-selector {
   background-color: red !important;
   margin-top: 0.1rem;
   margin-left: -0.02rem;
   width: 2.2rem;
   height: 0.5rem;
-  border-color: rgba(196, 196, 196, 0.40) !important;
+  border-color: rgba(196, 196, 196, 0.4) !important;
   background-color: rgba(22, 22, 29, 1) !important;
 }
 
-.ant-select-selection-overflow{
+.ant-select-selection-overflow {
   margin-top: -0.3rem;
 }
 
-.ant-select-selection-overflow-item{
+.ant-select-selection-overflow-item {
   color: rgba(22, 22, 29, 1);
   background-color: RGBA(239, 241, 244, 1);
   border-radius: 0.02rem;
 }
 
-.ant-select-selection-item{
+.ant-select-selection-item {
   background-color: RGBA(239, 241, 244, 1) !important;
   border: 0rem !important;
 }
 
-.ant-select-selection-item-remove{
+.ant-select-selection-item-remove {
   display: block;
   width: 0.1rem;
   height: 0.1rem;
@@ -272,27 +261,34 @@ code {
   border-radius: 50%;
 }
 
-.ant-select-selection-overflow-item.ant-select-selection-overflow-item-suffix{
+.ant-select-selection-overflow-item.ant-select-selection-overflow-item-suffix {
   opacity: 0 !important;
 }
 
-.ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-multiple.ant-select-open.ant-select-show-search{
-    width: 2.2rem !important;
+.ant-select.ant-select-in-form-item.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-multiple.ant-select-open.ant-select-show-search {
+  width: 2.2rem !important;
 }
 
-.ant-select.ant-select-in-form-item.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-search .ant-select-selection-search-input{
+.ant-select.ant-select-in-form-item.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-search .ant-select-selection-search-input {
   background-color: rgba(22, 22, 29, 1) !important;
 }
 
-.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt .ant-row.ant-form-item-row.css-dev-only-do-not-override-10ed4xt .ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt .ant-form-item-control-input .ant-form-item-control-input-content .ant-select.ant-select-in-form-item.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-item{
-  background-color: RGBA(20, 20, 20, 1)!important;
+.ant-form-item.newItemLanguage.css-dev-only-do-not-override-10ed4xt
+  .ant-row.ant-form-item-row.css-dev-only-do-not-override-10ed4xt
+  .ant-col.ant-col-14.ant-form-item-control.css-dev-only-do-not-override-10ed4xt
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .ant-select.ant-select-in-form-item.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow
+  .ant-select-selector
+  .ant-select-selection-item {
+  background-color: RGBA(20, 20, 20, 1) !important;
 }
 
-.ant-select-selection-overflow-item{
+.ant-select-selection-overflow-item {
   margin-right: 0.1rem;
 }
 
-.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton .anticon.anticon-down{
+.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton .anticon.anticon-down {
   position: absolute;
   top: 0.08rem;
   left: 0.85rem;
@@ -300,43 +296,43 @@ code {
   font-size: 0.06rem !important;
 }
 
-.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton span{
+.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton span {
   color: RGBA(134, 143, 152, 1);
   position: absolute;
   top: 0.04rem;
   left: 0.05rem;
 }
 
-.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton{
-  border-color: rgba(196, 196, 196, 0.40);
+.ant-btn.css-dev-only-do-not-override-10ed4xt.ant-btn-default.ant-dropdown-trigger.newItemButton {
+  border-color: rgba(196, 196, 196, 0.4);
 }
 
-.ant-select.ant-select-in-form-item.newItemSelect.ant-select-status-success.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-item{
+.ant-select.ant-select-in-form-item.newItemSelect.ant-select-status-success.css-dev-only-do-not-override-10ed4xt.ant-select-focused.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-search .ant-select-selection-item {
   background-color: RGBA(20, 20, 20, 1) !important;
 }
 
-.ant-select-selection-placeholder{
-  color: rgba(236, 235, 246, 0.60) !important;
+.ant-select-selection-placeholder {
+  color: rgba(236, 235, 246, 0.6) !important;
 }
 
-.ant-form-item-control-input-content .ant-select.ant-select-in-form-item.ant-select-status-success.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-item{
-  color: rgba(236, 235, 246, 0.60) !important;
+.ant-form-item-control-input-content .ant-select.ant-select-in-form-item.ant-select-status-success.newItemSelect.css-dev-only-do-not-override-10ed4xt.ant-select-single.ant-select-show-arrow .ant-select-selector .ant-select-selection-item {
+  color: rgba(236, 235, 246, 0.6) !important;
 }
 
-.ant-tabs-ink-bar.ant-tabs-ink-bar-animated{
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
   height: 0.15rem !important;
   margin-top: 0.045rem;
 }
 
-.ant-tabs-tab.ant-tabs-tab-disabled{
+.ant-tabs-tab.ant-tabs-tab-disabled {
   cursor: text !important;
 }
 
-.ant-tabs-tab.ant-tabs-tab-disabled .ant-tabs-tab-btn:hover{
+.ant-tabs-tab.ant-tabs-tab-disabled .ant-tabs-tab-btn:hover {
   color: #727190 !important ;
 }
 
-.connectBig{
+.connectBig {
   position: absolute;
   top: 0.25rem;
   right: 0.5rem;
@@ -349,13 +345,13 @@ code {
   background-color: red !important;
 }
 
-td.ant-table-cell{
+td.ant-table-cell {
   background-color: rgba(32, 30, 67, 1) !important;
   border-bottom: 0 !important;
   color: rgba(236, 235, 246, 1) !important;
 }
 
-td.ant-table-cell:nth-child(3){
+td.ant-table-cell:nth-child(3) {
   text-align: left !important;
 }
 
@@ -363,11 +359,11 @@ td.ant-table-cell:nth-child(4) {
   text-align: left !important;
 }
 
-td.ant-table-cell.ant-table-cell-row-hover{
+td.ant-table-cell.ant-table-cell-row-hover {
   background-color: rgba(32, 30, 67, 1) !important;
 }
 
-th.ant-table-cell{
+th.ant-table-cell {
   background-color: rgba(32, 30, 67, 1) !important;
   border: none !important;
   color: rgba(236, 235, 246, 0.62) !important;
@@ -377,56 +373,56 @@ td.ant-table-cell::before {
   background-color: rgba(32, 30, 67, 1) !important;
 }
 
-th.ant-table-cell::before{
-    background-color: rgba(32, 30, 67, 1) !important;
+th.ant-table-cell::before {
+  background-color: rgba(32, 30, 67, 1) !important;
 }
 
-.ant-spin-container{
+.ant-spin-container {
   border: none !important;
 }
 
-.ant-table-content{
-    background-color: rgba(32, 30, 67, 1) !important;
+.ant-table-content {
+  background-color: rgba(32, 30, 67, 1) !important;
 }
 
-li.ant-pagination-item.ant-pagination-item-active{
+li.ant-pagination-item.ant-pagination-item-active {
   background-color: rgba(32, 30, 67, 1) !important;
   border: none !important;
 }
 
-li.ant-pagination-item a{
+li.ant-pagination-item a {
   color: rgba(236, 235, 246, 1) !important;
 }
 
-li.ant-pagination-item.ant-pagination-item-active a{
+li.ant-pagination-item.ant-pagination-item-active a {
   color: RGBA(54, 73, 172, 1) !important;
 }
 
-.anticon.anticon-left{
+.anticon.anticon-left {
   color: rgba(236, 235, 246, 1) !important;
 }
 
-.anticon.anticon-right{
+.anticon.anticon-right {
   color: rgba(236, 235, 246, 1) !important;
 }
 
-td.ant-table-cell.TrendingItemDeposited{
+td.ant-table-cell.TrendingItemDeposited {
   color: rgba(120, 222, 10, 1) !important;
 }
 
-td.ant-table-cell.TrendingItemNo{
+td.ant-table-cell.TrendingItemNo {
   color: RGBA(158, 157, 177, 1) !important;
 }
 
-.ant-input.css-dev-only-do-not-override-ph9edi{
+.ant-input.css-dev-only-do-not-override-ph9edi {
   background-color: rgba(32, 30, 67, 1);
 }
 
-.ant-input.css-dev-only-do-not-override-ph9edi::-webkit-input-placeholder{
+.ant-input.css-dev-only-do-not-override-ph9edi::-webkit-input-placeholder {
   color: RGBA(153, 153, 174, 1) !important;
 }
 
-.ant-input-number-input{
+.ant-input-number-input {
   color: red !important;
 }
 
@@ -435,7 +431,7 @@ td.ant-table-cell.TrendingItemNo{
   opacity: 0;
 }
 
-.ant-tag.CreatrTag{
+.ant-tag.CreatrTag {
   border: 0.01rem solid RGBA(69, 105, 250, 1);
   border-radius: 0.11rem;
   color: RGBA(69, 105, 250, 1);
@@ -446,7 +442,7 @@ td.ant-table-cell.TrendingItemNo{
   color: #fff !important;
 }
 
-.ant-tag.CreatrTag:hover .anticon.anticon-close.ant-tag-close-icon{
+.ant-tag.CreatrTag:hover .anticon.anticon-close.ant-tag-close-icon {
   background-color: #fff;
   border-radius: 50%;
   color: RGBA(66, 99, 235, 1);
@@ -462,146 +458,40 @@ td.ant-table-cell.TrendingItemNo{
   opacity: 0;
 }
 
-
-/* DealHistoryTwo中的7个Tag标签样式 */
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag{
-  margin-top: 0.12rem;
-  margin-bottom: 0.12rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagOne{
-  color: red;
-  border: 0.01rem solid red;
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagTwo{
-  width: 0.9rem;
-  color: #000;
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-  background-color: RGBA(249, 229, 7, 1);
-  border: 0;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagTwo .anticon.anticon-close.ant-tag-close-icon{
-  opacity: 1 !important;
-  color: RGBA(249, 229, 7, 1);
-  background-color: #000;
-  border-radius: 50%;
-  width: 0.1rem;
-  height: 0.1rem;
-  line-height: 0.11rem;
-  margin-top: 0.025rem;
-  margin-left: 0.02rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagThree{
-  color: #000;
-  width: 0.35rem;
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-  background-color: RGBA(46, 212, 122, 1);
-  border: 0;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagThree .anticon.anticon-close.ant-tag-close-icon {
-  opacity: 1 !important;
-  color: RGBA(46, 212, 122, 1);
-  background-color: #000;
-  border-radius: 50%;
-  width: 0.1rem;
-  height: 0.1rem;
-  line-height: 0.11rem;
-  margin-top: 0.025rem;
-  margin-left: 0.02rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagFour {
-  color: red;
-  border: 0.01rem solid red;
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagFive {
-  color: RGBA(136, 90, 248, 1);
-  border: 0.01rem solid RGBA(136, 90, 248, 1);
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagSix {
-  color: RGBA(129, 142, 155, 1);
-  border: 0.01rem solid RGBA(129, 142, 155, 1);
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagSeven {
-  color: #fff;
-  width: 0.85rem;
-  height: 0.15rem;
-  border-radius: 0.075rem;
-  line-height: 0.15rem;
-  background-color: red;
-  border: 0;
-}
-
-.ant-space.css-dev-only-do-not-override-ph9edi.ant-space-horizontal.ant-space-align-center.DealHistoryTwoTag .ant-space-item .ant-tag.TagSeven .anticon.anticon-close.ant-tag-close-icon {
-  opacity: 1 !important;
-  color: red;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 0.1rem;
-  height: 0.1rem;
-  line-height: 0.11rem;
-  margin-top: 0.025rem;
-  margin-left: 0.02rem;
-}
-
-th.ant-table-cell.ant-table-selection-column .ant-table-selection{
+th.ant-table-cell.ant-table-selection-column .ant-table-selection {
   opacity: 0;
 }
 
-.ant-table-footer{
+.ant-table-footer {
   background-color: rgba(32, 30, 67, 1) !important;
   border-radius: 0 !important;
 }
 
-.anticon.anticon-close.ant-tag-close-icon{
+.anticon.anticon-close.ant-tag-close-icon {
   position: absolute !important;
 }
 
-.AirdropTabs .ant-tabs-nav{
+.AirdropTabs .ant-tabs-nav {
   background-color: RGBA(11, 10, 36, 1);
   width: 2rem;
   margin-left: 2rem;
 }
 
-.AirdropTabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active{
+.AirdropTabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active {
   background-color: RGBA(11, 10, 36, 1);
 }
 
-.AirdropTabs .ant-tabs-ink-bar.ant-tabs-ink-bar-animated{
+.AirdropTabs .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
   opacity: 0;
 }
 
-.AirdropSettingLeft label{
+.AirdropSettingLeft label {
   color: #fff !important;
   font-weight: 700 !important;
 }
 
-.AirdropSettingWalletP{
-  border: 0.01rem solid rgba(196, 196, 196, 0.40);
+.AirdropSettingWalletP {
+  border: 0.01rem solid rgba(196, 196, 196, 0.4);
   line-height: 0.2rem;
   padding-left: 0.05rem;
 }
@@ -612,37 +502,37 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
   margin-left: 0.08rem !important;
 }
 
-.AirdropSettingLeft .ant-form-item-control-input{
+.AirdropSettingLeft .ant-form-item-control-input {
   width: 2.4rem;
 }
 
-.AirDropDesposit .ant-card.ant-card-bordered.css-dev-only-do-not-override-ph9edi{
-  background: linear-gradient(to bottom right, #8489FF, #451CFF);
+.AirDropDesposit .ant-card.ant-card-bordered.css-dev-only-do-not-override-ph9edi {
+  background: linear-gradient(to bottom right, #8489ff, #451cff);
   border: 0;
   border-radius: 0.08rem;
 }
 
-.AirDropDesposit .ant-statistic-title{
+.AirDropDesposit .ant-statistic-title {
   color: #fff;
   margin-left: -0.02rem;
 }
 
-.AirDropDespositCardTwo .ant-statistic-content{
+.AirDropDespositCardTwo .ant-statistic-content {
   margin-top: 0.1rem !important;
 }
 
-.PortfolioModal .ant-modal-header{
+.PortfolioModal .ant-modal-header {
   background-color: RGBA(29, 29, 39, 1);
   margin-top: 0.1rem;
   border-radius: 0;
 }
 
-.PortfolioModal .ant-modal-body{
+.PortfolioModal .ant-modal-body {
   background-color: RGBA(29, 29, 39, 1);
-  margin-top: -0.08rem ;
+  margin-top: -0.08rem;
 }
 
-.PortfolioModal .ant-modal-content{
+.PortfolioModal .ant-modal-content {
   position: absolute;
   top: 0.2rem;
   left: -1.4rem;
@@ -650,72 +540,72 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
   border-radius: 0.05rem !important;
 }
 
-.PortfolioModal .ant-modal-title{
+.PortfolioModal .ant-modal-title {
   color: #fff;
 }
 
-.PortfolioTextOne{
+.PortfolioTextOne {
   height: 1rem;
   overflow: hidden;
 }
 
-.PortfolioModal .ant-timeline-item-tail{
-  background-color: RGBA(42, 44, 51, 1) ;
+.PortfolioModal .ant-timeline-item-tail {
+  background-color: RGBA(42, 44, 51, 1);
   margin-left: 0.05rem;
 }
 
-.PortfolioModal .ant-timeline-item-head.ant-timeline-item-head-custom.ant-timeline-item-head-blue{
+.PortfolioModal .ant-timeline-item-head.ant-timeline-item-head-custom.ant-timeline-item-head-blue {
   background-color: RGBA(29, 29, 39, 1);
 }
 
-.PortfolioModal .ant-avatar{
+.PortfolioModal .ant-avatar {
   width: 0.2rem;
   height: 0.2rem;
 }
 
-.PortfolioModal .ant-input.css-dev-only-do-not-override-ph9edi::placeholder{
+.PortfolioModal .ant-input.css-dev-only-do-not-override-ph9edi::placeholder {
   color: RGBA(103, 105, 113, 1) !important;
 }
 
-.newItemLeft label{
-  color:rgba(236, 235, 246, 0.80) !important;
+.newItemLeft label {
+  color: rgba(236, 235, 246, 0.8) !important;
 }
 
-.newItemRight label{
-  color:rgba(236, 235, 246, 0.80) !important;
+.newItemRight label {
+  color: rgba(236, 235, 246, 0.8) !important;
 }
 
-.newItemRight .ant-select-selector{
+.newItemRight .ant-select-selector {
   background-color: RGBA(20, 20, 20, 1) !important;
 }
 
-.newItemRight .newItemLanguage .ant-select-selection-item{
+.newItemRight .newItemLanguage .ant-select-selection-item {
   background-color: RGBA(20, 20, 20, 1) !important;
-  color: rgba(196, 196, 196, 0.40);
+  color: rgba(196, 196, 196, 0.4);
 }
 
-.newItemRight .ant-select-arrow{
+.newItemRight .ant-select-arrow {
   opacity: 0;
 }
 
 .newItemRight .newItemLanguage .ant-select-arrow {
-  color: rgba(196, 196, 196, 0.40);
+  color: rgba(196, 196, 196, 0.4);
   opacity: 1;
 }
 
-.newItemRight .ant-select-selection-item{
+.newItemRight .ant-select-selection-item {
   background-color: #fff !important;
 }
 
-.newItemRight .ant-form-item-control-input-content .ant-input{
-  color: rgba(196, 196, 196, 0.40) !important;
+.newItemRight .ant-form-item-control-input-content .ant-input {
+  color: rgba(196, 196, 196, 0.4) !important;
 }
 
-.newItemLeft .ant-form-item-control-input-content .ant-input{
-  color: rgba(196, 196, 196, 0.40) !important;
+.newItemLeft .ant-form-item-control-input-content .ant-input {
+  color: rgba(196, 196, 196, 0.4) !important;
 }
 
-.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-default.createTagButton{
+.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-default.createTagButton {
   color: RGBA(69, 105, 250, 1);
   border-radius: 0.5rem;
   background-color: transparent;
@@ -723,6 +613,72 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
   font-size: 0.01rem;
   line-height: 0.12rem;
 }
+
+.AirdropDepositModal .ant-modal-content {
+  background-color: #fff !important;
+}
+
+.AirfropDespositFrom .ant-form-item-control-input-content input.ant-input {
+  background-color: #fff !important;
+}
+
+.AirfropDespositFrom label {
+  margin-left: 1rem !important;
+}
+
+.AirdropDepositModal .ant-modal-close {
+  color: #000 !important;
+}
+
+span.ant-upload-wrapper.ant-upload-picture-card-wrapper.avatar-uploader.css-dev-only-do-not-override-ph9edi .ant-upload.ant-upload-select{
+  border-radius: 50% !important;
+}
+
+.avatar-uploader{
+  background-color: RGBA(32, 30, 67, 1) !important;
+}
+
+span.airdropUploader .ant-upload.ant-upload-select span{
+  background-color: RGBA(32, 30, 67, 1);
+}
+
+span.airdropUploader .ant-upload.ant-upload-select {
+  background-color: RGBA(32, 30, 67, 1);
+}
+
+.ant-upload.ant-upload-select img{
+  width: 0.52rem !important;
+  position: absolute;
+  top: 0.02rem;
+  left: 0.06rem;
+}
+
+.ant-table-wrapper.css-dev-only-do-not-override-ph9edi table tbody.ant-table-tbody{
+  height: 5rem !important;
+}
+
+
+
+/* 为了修复高度样式进行修改的部分！！！！！！ */
+.ant-tabs-nav{
+  height: 7rem;
+}
+.ant-tabs-content-holder{
+  height: 7rem;
+  background-color: rgb(11, 10, 36);
+}
+.ant-tabs-content.ant-tabs-content-top{
+  position: absolute;
+  top: 0.25rem;
+}
+.ant-tabs.ant-tabs-top.AirdropTabs.css-dev-only-do-not-override-ph9edi{
+  height: 1.9rem;
+}
+/* 为了修复高度样式进行修改的部分！！！！！！ */
+
+/* .DashboardContent .ant-tabs-nav-wrap{
+  margin-top: -0.02rem !important;
+} */
 
 
 
@@ -735,45 +691,3 @@ th.ant-table-cell.ant-table-selection-column .ant-table-selection{
       color: red;
     }
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-

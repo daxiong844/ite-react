@@ -5,16 +5,27 @@ import DealHistoryTwoTag from '../component/DealHistoryTwoTag'
 import { withTranslation } from 'react-i18next'
 
 class Deal extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedTag: null
+    }
+  }
+
+  handleTagClick = tag => {
+    this.setState({ selectedTag: tag })
+  }
   render() {
     const { t } = this.props
+    const { selectedTag } = this.state
 
     return (
       <>
         <div className="DealContent" style={{ marginLeft: '0.06rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <span style={{ color: 'rgba(245, 244, 251, 1)', fontSize: '0.12rem' }}>{t('Deal.Deal History')}</span>
-          <DealHistoryTwoTag></DealHistoryTwoTag>
+          <DealHistoryTwoTag onTagClick={this.handleTagClick}></DealHistoryTwoTag>
         </div>
-        <DealHistoryTwo></DealHistoryTwo>
+        <DealHistoryTwo selectedTag={selectedTag}></DealHistoryTwo>
       </>
     )
   }

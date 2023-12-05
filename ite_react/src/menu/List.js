@@ -6,22 +6,34 @@ import TrendingItem from '../component/TrendingItem'
 import { Col, Row } from 'antd'
 
 class List extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedTag: null
+    }
+  }
+
+  handleTagClick = tag => {
+    this.setState({ selectedTag: tag })
+  }
   render() {
     const { t } = this.props
+    const { selectedTag } = this.state
+
     return (
       <>
         <Row>
           <Col span={24}>
             <div className="DealContent" style={{ marginLeft: '0.06rem', position: 'relative' }}>
               <span style={{ color: 'rgba(245, 244, 251, 1)', fontSize: '0.12rem', display: 'block', marginBottom: '0.1rem' }}>{t('Dashboard.Trending Item')}</span>
-              <CreateTag></CreateTag>
+              <CreateTag onTagClick={this.handleTagClick}></CreateTag>
             </div>
           </Col>
         </Row>
         <Row>
           <Col span={24}>
             <div className="DealContent" style={{ marginLeft: '0.06rem', position: 'relative' }}>
-              <TrendingItem></TrendingItem>
+              <TrendingItem selectedTag={selectedTag}></TrendingItem>
             </div>
           </Col>
         </Row>
